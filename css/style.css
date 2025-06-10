@@ -205,18 +205,16 @@ img {
   font-size: 1rem;
   font-weight: 500;
   position: relative;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
   display: inline-block;
-  color: var(--color-light);
+  color: var(--color-primary); /* Texto roxo direto */
 }
 
-/* Removido o ::after e a linha animada */
-
-/* Hover com efeito sutil */
+/* Hover com efeito de “aproximar” + brilho */
 #nav ul li a:hover,
 #nav ul li a.active {
-  transform: translateY(-2px) scale(1.02); /* Leve avanço e elevação */
-  text-shadow: 0 0 4px var(--color-primary), 0 0 6px var(--color-primary);
+  transform: scale(1.05); /* Apenas crescer, como se aproximasse */
+  text-shadow: 0 0 6px var(--color-primary), 0 0 10px var(--color-primary);
 }
 
 .mobile-toggle {
