@@ -207,14 +207,15 @@ img {
   position: relative;
   transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
   display: inline-block;
-  color: var(--color-primary); /* Texto roxo direto */
+  color: var(--color-light); /* Cor padrão (clara, ou como preferir) */
 }
 
-/* Hover com efeito de “aproximar” + brilho */
+/* Hover: aproxima levemente, muda a cor e aplica brilho leve */
 #nav ul li a:hover,
 #nav ul li a.active {
-  transform: scale(1.05); /* Apenas crescer, como se aproximasse */
-  text-shadow: 0 0 6px var(--color-primary), 0 0 10px var(--color-primary);
+  transform: scale(1.05);
+  color: var(--color-primary); /* Cor roxa apenas no hover */
+  text-shadow: 0 0 4px var(--color-primary), 0 0 6px rgba(128, 0, 128, 0.4); /* brilho mais leve */
 }
 
 .mobile-toggle {
