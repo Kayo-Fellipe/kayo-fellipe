@@ -205,6 +205,9 @@ img {
   font-size: 1rem;
   font-weight: 500;
   position: relative;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  display: inline-block;
+  color: var(--color-light); /* Garante boa visibilidade */
 }
 
 #nav ul li a:after {
@@ -215,7 +218,13 @@ img {
   width: 0;
   height: 2px;
   background-color: var(--color-primary);
-  transition: var(--transition);
+  transition: width 0.3s ease;
+}
+
+#nav ul li a:hover,
+#nav ul li a.active {
+  transform: translateZ(10px) scale(1.05);
+  text-shadow: 0 0 8px var(--color-primary), 0 0 16px var(--color-primary);
 }
 
 #nav ul li a:hover:after,
