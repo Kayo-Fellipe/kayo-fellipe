@@ -710,11 +710,12 @@ img {
 }
 
 .author-img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: var(--space-3);
+  margin-left: var(--space-3);
+  margin-right: var(--space-3); /* ou um valor maior, como var(--space-4) */
   border: 3px solid var(--color-primary);
 }
 
