@@ -215,7 +215,6 @@ img {
 #nav ul li a.active {
   transform: scale(1.05);
   color: var(--color-light); /* Cor roxa apenas no hover */
-  text-shadow: 0 0 4px var(--color-light), 0 0 6px rgba(128, 0, 128, 0.4); /* brilho mais leve */
 }
 
 .mobile-toggle {
