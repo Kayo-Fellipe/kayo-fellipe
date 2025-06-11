@@ -635,137 +635,161 @@ img {
   left: 0;
 }
 
-/* Testimonials Section */
-.testimonial-slider {
+/* Testimonials Section - New Design */
+.testimonials-section {
+  background-color: #1a1a1a;
+  padding: var(--space-7) 0;
+}
+
+.testimonials-carousel {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.testimonial-container {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-}
-
-.testimonial-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.testimonial-card {
+  background-color: #2a2a2a;
+  border-radius: 20px;
+  padding: var(--space-6);
+  display: none;
   opacity: 0;
   transform: translateX(50px);
   transition: all 0.5s ease;
-  visibility: hidden;
 }
 
-.testimonial-slide.active {
+.testimonial-card.active {
+  display: flex;
   opacity: 1;
   transform: translateX(0);
-  visibility: visible;
-}
-
-.testimonial-content {
-  background-color: var(--color-dark-700);
-  border-radius: var(--border-radius);
-  padding: var(--space-4);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.testimonial-text {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: var(--color-light-700);
-  line-height: 1.7;
-}
-
-.testimonial-text p::before {
-  content: '\201C';
-  font-size: 2rem;
-  color: var(--color-primary);
-  margin-right: var(--space-1);
-}
-
-.testimonial-text p::after {
-  content: '\201D';
-  font-size: 2rem;
-  color: var(--color-primary);
-  margin-left: var(--space-1);
+  align-items: center;
+  gap: var(--space-5);
 }
 
 .testimonial-author {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: var(--space-3);
+  text-align: center;
+  min-width: 120px;
 }
 
-.author-img {
-  width: 60px;
-  height: 60px;
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  border: 3px solid #00ff88;
   overflow: hidden;
-  margin-right: var(--space-3);
-  border: 3px solid var(--color-primary);
+  margin-bottom: var(--space-3);
 }
 
-.author-info h4 {
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-author-info h4 {
+  color: var(--color-light);
+  font-weight: 700;
   font-size: 1.1rem;
-  margin-bottom: 0;
+  margin-bottom: var(--space-1);
 }
 
-.author-info p {
-  color: var(--color-primary);
+.testimonial-author-info p {
+  color: #8b5cf6;
   font-size: 0.9rem;
   margin-bottom: 0;
 }
 
-.testimonial-controls {
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-text {
+  color: var(--color-light);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial-navigation {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: var(--space-4);
+  margin-top: var(--space-5);
+  gap: var(--space-4);
 }
 
-.prev-btn, .next-btn {
+.testimonial-arrow {
   background-color: transparent;
-  border: 1px solid var(--color-light-700);
+  border: 2px solid var(--color-light-700);
   color: var(--color-light);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: var(--transition);
+  font-size: 1.2rem;
 }
 
-.prev-btn:hover, .next-btn:hover {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
+.testimonial-arrow:hover {
+  background-color: #00ff88;
+  border-color: #00ff88;
+  color: var(--color-dark);
 }
 
 .testimonial-dots {
   display: flex;
-  margin: 0 var(--space-3);
+  gap: var(--space-2);
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
+.testimonial-dot {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: var(--color-light-700);
-  margin: 0 var(--space-1);
   cursor: pointer;
   transition: var(--transition);
 }
 
-.dot.active, .dot:hover {
-  background-color: var(--color-primary);
+.testimonial-dot.active,
+.testimonial-dot:hover {
+  background-color: #00ff88;
+}
+
+/* Mobile Responsive for Testimonials */
+@media (max-width: 768px) {
+  .testimonial-card.active {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-4);
+  }
+  
+  .testimonial-author {
+    min-width: auto;
+  }
+  
+  .testimonial-card {
+    padding: var(--space-4);
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+  }
+  
+  .testimonial-navigation {
+    gap: var(--space-3);
+  }
+  
+  .testimonial-arrow {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
 }
 
 /* Contact Section */

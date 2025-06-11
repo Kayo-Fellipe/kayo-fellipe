@@ -1,20 +1,20 @@
-// Testimonial Slider
+// New Testimonials Carousel
 
 // DOM Elements
-const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+const testimonialCards = document.querySelectorAll('.testimonial-card');
 const prevBtn = document.getElementById('prev-testimonial');
 const nextBtn = document.getElementById('next-testimonial');
-const dots = document.querySelectorAll('.testimonial-dots .dot');
+const dots = document.querySelectorAll('.testimonial-dot');
 
 // Set initial slide
 let currentSlide = 0;
-const slideCount = testimonialSlides.length;
+const slideCount = testimonialCards.length;
 
 // Show slide function
 function showSlide(index) {
-  // Hide all slides
-  testimonialSlides.forEach(slide => {
-    slide.classList.remove('active');
+  // Hide all cards
+  testimonialCards.forEach(card => {
+    card.classList.remove('active');
   });
   
   // Remove active class from all dots
@@ -22,8 +22,8 @@ function showSlide(index) {
     dot.classList.remove('active');
   });
   
-  // Show current slide
-  testimonialSlides[index].classList.add('active');
+  // Show current card
+  testimonialCards[index].classList.add('active');
   
   // Add active class to current dot
   dots[index].classList.add('active');
@@ -59,17 +59,26 @@ dots.forEach((dot, index) => {
   });
 });
 
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') {
+    prevSlide();
+  } else if (e.key === 'ArrowRight') {
+    nextSlide();
+  }
+});
+
 // Auto slide every 5 seconds
 let slideInterval = setInterval(nextSlide, 5000);
 
 // Pause auto slide on hover
-const testimonialContainer = document.querySelector('.testimonial-slider');
-testimonialContainer.addEventListener('mouseenter', () => {
+const testimonialCarousel = document.querySelector('.testimonials-carousel');
+testimonialCarousel.addEventListener('mouseenter', () => {
   clearInterval(slideInterval);
 });
 
 // Resume auto slide on mouse leave
-testimonialContainer.addEventListener('mouseleave', () => {
+testimonialCarousel.addEventListener('mouseleave', () => {
   clearInterval(slideInterval);
   slideInterval = setInterval(nextSlide, 5000);
 });
@@ -78,25 +87,28 @@ testimonialContainer.addEventListener('mouseleave', () => {
 let touchStartX = 0;
 let touchEndX = 0;
 
-const testimonialElement = document.querySelector('.testimonial-container');
-
-testimonialElement.addEventListener('touchstart', (e) => {
+testimonialCarousel.addEventListener('touchstart', (e) => {
   touchStartX = e.changedTouches[0].screenX;
 });
 
-testimonialElement.addEventListener('touchend', (e) => {
+testimonialCarousel.addEventListener('touchend', (e) => {
   touchEndX = e.changedTouches[0].screenX;
   handleSwipe();
 });
 
 function handleSwipe() {
-  if (touchEndX < touchStartX - 50) {
+  const swipeThreshold = 50;
+  
+  if (touchEndX < touchStartX - swipeThreshold) {
     // Swipe left, show next slide
     nextSlide();
   }
   
-  if (touchEndX > touchStartX + 50) {
+  if (touchEndX > touchStartX + swipeThreshold) {
     // Swipe right, show previous slide
     prevSlide();
   }
 }
+
+// Initialize first slide
+showSlide(0);
