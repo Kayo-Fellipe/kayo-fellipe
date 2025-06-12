@@ -1,13 +1,13 @@
 /* Base Styles */
 :root {
-  /* Color System */
-  --color-primary: #7017e4;
-  --color-primary-light: #fb923c;
-  --color-primary-dark: #c2410c;
+  /* Color System - Updated to new palette */
+  --color-primary: #8A2BE2;
+  --color-primary-light: #9932CC;
+  --color-primary-dark: #7B68EE;
   
   --color-dark: #121212;
-  --color-dark-800: #1e1e1e;
-  --color-dark-700: #2d2d2d;
+  --color-dark-800: #1a1a1a;
+  --color-dark-700: #2a2a2a;
   --color-dark-600: #333333;
   
   --color-light: #ffffff;
@@ -66,11 +66,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--space-3);
+  color: var(--color-light);
 }
 
 p {
   margin-bottom: var(--space-3);
   font-size: 1rem;
+  color: var(--color-light);
 }
 
 a {
@@ -104,7 +106,6 @@ img {
 .section-header {
   text-align: center;
   margin-bottom: var(--space-6);
-  
 }
 
 .section-header h2 {
@@ -112,6 +113,7 @@ img {
   position: relative;
   display: inline-block;
   margin-bottom: var(--space-2);
+  color: var(--color-light);
 }
 
 .section-line {
@@ -140,7 +142,7 @@ img {
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
 }
 
 .btn-secondary {
@@ -154,6 +156,7 @@ img {
   color: var(--color-dark);
 }
 
+/* Keep WhatsApp button styles unchanged */
 .btn-whatsapp {
   background-color: #25d366;
   color: var(--color-light);
@@ -207,14 +210,13 @@ img {
   position: relative;
   transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
   display: inline-block;
-  color: var(--color-light); /* Cor padrão (clara, ou como preferir) */
+  color: var(--color-light);
 }
 
-/* Hover: aproxima levemente, muda a cor e aplica brilho leve */
 #nav ul li a:hover,
 #nav ul li a.active {
   transform: scale(1.05);
-  color: var(--color-light); /* Cor roxa apenas no hover */
+  color: var(--color-primary);
 }
 
 .mobile-toggle {
@@ -250,7 +252,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.5));
 }
 
 .hero-content {
@@ -271,7 +273,7 @@ img {
 
 .hero-content p {
   font-size: 1.0rem;
-  color: var(--color-light-700);
+  color: var(--color-light);
   margin-bottom: var(--space-4);
   opacity: 0;
   transform: translateY(20px);
@@ -332,43 +334,7 @@ img {
 .image-container:hover img {
   transform: scale(1.05);
 }
-/* --------------------------------------------------------- */
-/* .tools {
-  margin-top: var(--space-4);
-  background-color: var(--color-dark-700);
-  padding: var(--space-3);
-  border-radius: var(--border-radius);
-}
 
-.tools h3 {
-  font-size: 1.3rem;
-  margin-bottom: var(--space-3);
-  color: var(--color-light);
-}
-
-.tool-icons {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.tool {
-  text-align: center;
-  margin-bottom: var(--space-2);
-  width: 48%;
-}
-
-.tool i {
-  font-size: 2rem;
-  color: var(--color-primary);
-  margin-bottom: var(--space-1);
-}
-
-.tool span {
-  font-size: 0.9rem;
-  color: var(--color-light-700);
-} */
-/* --------------------------------------------------------- */
 .about-text {
   flex: 1;
   text-align: justify;
@@ -376,39 +342,9 @@ img {
 
 .about-text p {
   margin-bottom: var(--space-3);
-  color: var(--color-light-700);
-}
-/* --------------------------------------------------------- */
-/* .experience {
-  display: flex;
-  margin-top: var(--space-4);
+  color: var(--color-light);
 }
 
-.exp-item {
-  flex: 1;
-  text-align: center;
-  padding: var(--space-3);
-  background-color: var(--color-dark-700);
-  border-radius: var(--border-radius);
-  margin-right: var(--space-3);
-}
-
-.exp-item:last-child {
-  margin-right: 0;
-}
-
-.exp-item h4 {
-  font-size: 2rem;
-  color: var(--color-primary);
-  margin-bottom: var(--space-1);
-}
-
-.exp-item p {
-  font-size: 0.9rem;
-  color: var(--color-light-700);
-  margin-bottom: 0;
-} */
-/* --------------------------------------------------------- */
 /* Portfolio Section */
 .portfolio-filter {
   display: flex;
@@ -419,7 +355,7 @@ img {
 .filter-btn {
   background-color: transparent;
   border: none;
-  color: var(--color-light-700);
+  color: var(--color-light);
   padding: var(--space-2) var(--space-3);
   margin: 0 var(--space-1);
   cursor: pointer;
@@ -469,7 +405,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(18, 18, 18, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -514,8 +450,8 @@ img {
 }
 
 .portfolio-link:hover {
-  background-color: var(--color-light);
-  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  color: var(--color-light);
 }
 
 /* Modal Styles */
@@ -528,7 +464,7 @@ img {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(18, 18, 18, 0.9);
 }
 
 .modal-content {
@@ -597,7 +533,7 @@ img {
   top: 0;
   left: 0;
   width: 5px;
-  height: 100%; /* Sempre visível */
+  height: 100%;
   background-color: var(--color-primary);
 }
 
@@ -610,10 +546,11 @@ img {
 .service-card h3 {
   font-size: 1.5rem;
   margin-bottom: var(--space-2);
+  color: var(--color-light);
 }
 
 .service-card p {
-  color: var(--color-light-700);
+  color: var(--color-light);
   margin-bottom: var(--space-3);
 }
 
@@ -623,7 +560,7 @@ img {
 
 .service-features li {
   padding: var(--space-1) 0;
-  color: var(--color-light-700);
+  color: var(--color-light);
   position: relative;
   padding-left: var(--space-3);
 }
@@ -637,7 +574,7 @@ img {
 
 /* Testimonials Section - New Design */
 .testimonials-section {
-  background-color: #1a1a1a;
+  background-color: var(--color-dark-800);
   padding: var(--space-7) 0;
 }
 
@@ -648,7 +585,7 @@ img {
 }
 
 .testimonial-card {
-  background-color: #2a2a2a;
+  background-color: var(--color-dark-700);
   border-radius: 20px;
   padding: var(--space-6);
   display: none;
@@ -677,7 +614,7 @@ img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 3px solid #00ff88;
+  border: 3px solid var(--color-primary);
   overflow: hidden;
   margin-bottom: var(--space-3);
 }
@@ -696,7 +633,7 @@ img {
 }
 
 .testimonial-author-info p {
-  color: #8b5cf6;
+  color: var(--color-primary);
   font-size: 0.9rem;
   margin-bottom: 0;
 }
@@ -723,7 +660,7 @@ img {
 
 .testimonial-arrow {
   background-color: transparent;
-  border: 2px solid var(--color-light-700);
+  border: 2px solid var(--color-light);
   color: var(--color-light);
   width: 50px;
   height: 50px;
@@ -737,9 +674,9 @@ img {
 }
 
 .testimonial-arrow:hover {
-  background-color: #00ff88;
-  border-color: #00ff88;
-  color: var(--color-dark);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-light);
 }
 
 .testimonial-dots {
@@ -751,14 +688,14 @@ img {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: var(--color-light-700);
+  background-color: var(--color-light);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .testimonial-dot.active,
 .testimonial-dot:hover {
-  background-color: #00ff88;
+  background-color: var(--color-primary);
 }
 
 /* Mobile Responsive for Testimonials */
@@ -826,17 +763,18 @@ img {
 
 .contact-text p {
   margin: 0.2rem 0 0;
-  color: var(--color-light-700);
+  color: var(--color-light);
   font-size: 0.95rem;
 }
 
 .contact-card h3 {
   font-size: 1.1rem;
   margin-bottom: var(--space-1);
+  color: var(--color-light);
 }
 
 .contact-card p {
-  color: var(--color-light-700);
+  color: var(--color-light);
   margin-bottom: 0;
   white-space: normal;
 }
@@ -905,10 +843,11 @@ img {
 .footer-logo a {
   font-size: 2rem;
   font-weight: 700;
+  color: var(--color-light);
 }
 
 .footer-logo p {
-  color: var(--color-light-700);
+  color: var(--color-light);
   margin-bottom: 0;
 }
 
@@ -926,10 +865,12 @@ img {
   justify-content: center;
   margin-left: var(--space-2);
   transition: var(--transition);
+  color: var(--color-light);
 }
 
 .social-icon:hover {
   background-color: var(--color-primary);
+  color: var(--color-light);
 }
 
 .footer-bottom {
@@ -939,7 +880,7 @@ img {
 }
 
 .footer-bottom p {
-  color: var(--color-light-700);
+  color: var(--color-light);
   font-size: 0.9rem;
   margin-bottom: 0;
 }
@@ -971,5 +912,5 @@ img {
 }
 
 .scroll-top:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
 }
