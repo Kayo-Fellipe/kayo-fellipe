@@ -4,6 +4,7 @@
 const contactForm = document.getElementById('contactForm');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
+const phonelInput = document.getElementById('phone');
 const subjectInput = document.getElementById('subject');
 const messageInput = document.getElementById('message');
 
@@ -34,6 +35,11 @@ function validateForm() {
     isValid = false;
   } else if (!isValidEmail(emailInput.value)) {
     showError(emailInput, 'Por favor, insira um e-mail válido');
+    isValid = false;
+  }
+
+  if (phoneInput.value.trim() === '') {
+    showError(phoneInput, 'Por favor, insira seu telefone');
     isValid = false;
   }
 
@@ -73,7 +79,7 @@ function removeErrors() {
   errorMessages.forEach(error => error.remove());
   
   // Remove error class from inputs
-  const inputs = [nameInput, emailInput, subjectInput, messageInput];
+  const inputs = [nameInput, emailInput, phoneIpunt, subjectInput, messageInput];
   inputs.forEach(input => {
     input.classList.remove('error-input');
   });
