@@ -38,8 +38,11 @@ function validateForm() {
     isValid = false;
   }
 
-  if (phoneInput.value.trim() === '') {
-    showError(phoneInput, 'Por favor, insira seu telefone');
+ if (phoneInput.value.trim() === '') {
+  showError(phoneInput, 'Por favor, insira seu telefone');
+  isValid = false;
+  } else if (!isValidPhone(phoneInput.value)) {
+    showError(phoneInput, 'Por favor, insira um telefone válido');
     isValid = false;
   }
 
@@ -54,6 +57,11 @@ function validateForm() {
   }
 
   return isValid;
+}
+
+function isValidPhone(phone) {
+  const phoneRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
+  return phoneRegex.test(phone);
 }
 
 // Show error message
@@ -79,7 +87,7 @@ function removeErrors() {
   errorMessages.forEach(error => error.remove());
   
   // Remove error class from inputs
-  const inputs = [nameInput, emailInput, phoneIpunt, subjectInput, messageInput];
+  const inputs = [nameInput, emailInput, phoneInput, subjectInput, messageInput];
   inputs.forEach(input => {
     input.classList.remove('error-input');
   });
