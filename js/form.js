@@ -4,7 +4,7 @@
 const contactForm = document.getElementById('contactForm');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
-const phonelInput = document.getElementById('phone');
+const phoneInput = document.getElementById('phone');
 const subjectInput = document.getElementById('subject');
 const messageInput = document.getElementById('message');
 
@@ -167,7 +167,7 @@ function showFormMessage(type, message) {
 }
 
 // Add input event listeners to clear errors on typing
-const inputs = [nameInput, emailInput, subjectInput, messageInput];
+const inputs = [nameInput, emailInput, phoneInput, subjectInput, messageInput];
 inputs.forEach(input => {
   input.addEventListener('input', () => {
     // Remove error class
