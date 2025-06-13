@@ -675,8 +675,8 @@ img {
 }
 
 .testimonial-avatar {
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   border-radius: 50%;
   border: 3px solid var(--color-primary);
   overflow: hidden;
@@ -692,13 +692,13 @@ img {
 .testimonial-author-info h4 {
   color: var(--color-light);
   font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: var(--space-1);
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .testimonial-author-info p {
   color: var(--color-primary);
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   margin-bottom: 0;
 }
 
