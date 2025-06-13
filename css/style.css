@@ -639,12 +639,12 @@ img {
 /* Testimonials Section - New Design */
 .testimonials-section {
   background-color: var(--color-dark-800);
-  padding: var(--space-5) 0;
+  padding: var(--space-7) 0;
 }
 
 .testimonials-carousel {
   position: relative;
-  max-width: 900px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
