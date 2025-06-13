@@ -1,9 +1,32 @@
-/* Thank You Message Styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #121212;
+}
+
 #thankyou-container {
-  max-width: 600px;
-  margin: 2rem auto;
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 2rem;
-  display: none;
+  text-align: center;
 }
 
 .thankyou-card {
@@ -11,8 +34,18 @@
   padding: 3rem 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
   animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .check-icon {
@@ -21,26 +54,60 @@
   animation: scaleIn 0.5s ease-out 0.3s both;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 @keyframes scaleIn {
-  from { transform: scale(0); }
-  to { transform: scale(1); }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
-#thankyou-container h1 {
+h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #ffffff;
 }
 
-#thankyou-container p {
+p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #ffffff;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #8A2BE2;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.25s;
+}
+
+.back-btn:hover {
+  background-color: #9932CC;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #ffffff;
+    background-color: #121212;
+  }
+  
+  .thankyou-card {
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  
+  p {
+    color: #ffffff;
+  }
 }
 
 @media (max-width: 768px) {
@@ -48,11 +115,11 @@
     padding: 2rem 1rem;
   }
   
-  #thankyou-container h1 {
+  h1 {
     font-size: 2rem;
   }
   
-  #thankyou-container p {
+  p {
     font-size: 1rem;
   }
 }
