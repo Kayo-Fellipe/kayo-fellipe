@@ -9,15 +9,43 @@ const subjectInput = document.getElementById('subject');
 const messageInput = document.getElementById('message');
 
 // Form validation
-contactForm.addEventListener('submit', (e) => {
-  if (!validateForm()) {
-    e.preventDefault(); // impede o envio apenas se for inválido
-    return;
-  }
+contactForm.addEventListener('submit', function(e) {
+  e.preventDefault();
 
-  // Se o formulário for válido, armazena o nome no sessionStorage
-  const name = nameInput.value.trim();
-  sessionStorage.setItem('contactFormData', JSON.stringify({ name }));
+  if (!validateForm()) return;
+
+  const formData = new FormData(contactForm);
+
+  fetch("https://formsubmit.co/ajax/kayofellipefer@gmail.com", {
+    method: "POST",
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      showThankYouModal(nameInput.value.trim());
+      contactForm.reset();
+    } else {
+      alert("Ocorreu um erro. Tente novamente.");
+    }
+  })
+  .catch(error => {
+    console.error("Erro ao enviar:", error);
+    alert("Erro ao enviar o formulário.");
+  });
+});
+
+function showThankYouModal(name) {
+  const modal = document.getElementById('modal-thankyou');
+  const title = document.getElementById('thankYouTitle');
+  title.textContent = `Obrigado, ${name.toUpperCase()}!`;
+  modal.classList.remove('hidden');
+}
+
+document.getElementById('closeModal').addEventListener('click', () => {
+  document.getElementById('modal-thankyou').classList.add('hidden');
 });
 
 // Validate form inputs
