@@ -675,8 +675,8 @@ img {
 }
 
 .testimonial-avatar {
-  width: 115px;
-  height: 115px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 3px solid var(--color-primary);
   overflow: hidden;
