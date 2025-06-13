@@ -1,4 +1,8 @@
-
+body, html {
+  position: relative;
+  overflow: visible; /* não pode ser hidden */
+  height: 100%;
+}
 /* Base Styles */
 :root {
   /* Color System - Updated to new palette */
