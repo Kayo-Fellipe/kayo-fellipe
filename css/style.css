@@ -1,7 +1,4 @@
-html, body {
-  overflow-x: hidden; /* Evita rolagem lateral que pode empurrar o modal */
-  position: relative;
-}
+
 /* Base Styles */
 :root {
   /* Color System - Updated to new palette */
