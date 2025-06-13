@@ -48,40 +48,6 @@ document.getElementById('closeModal').addEventListener('click', () => {
   document.getElementById('modal-thankyou').classList.add('hidden');
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
-  const modal = document.getElementById("modal-thankyou");
-  const closeModalBtn = document.getElementById("closeModal");
-
-  // Intercepta o envio do formulário
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    try {
-      await fetch("https://formsubmit.co/ajax/kayofellipefer@gmail.com", {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: formData,
-      });
-
-      // Mostra o modal
-      modal.classList.remove("hidden");
-      modal.classList.add("show");
-
-      // Limpa o formulário
-      form.reset();
-    } catch (error) {
-      alert("Erro ao enviar a mensagem. Tente novamente mais tarde.");
-    }
-  });
-
-  // Fecha o modal ao clicar no botão
-  closeModalBtn.addEventListener("click", () => {
-    modal.classList.remove("show");
-    modal.classList.add("hidden");
-  });
-});
 
 
 // Validate form inputs
