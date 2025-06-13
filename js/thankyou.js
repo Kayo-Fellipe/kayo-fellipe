@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (heading && name) {
         heading.textContent = `Obrigado, ${name}!`;
       }
-
-      // Limpa os dados armazenados
-      sessionStorage.removeItem('contactFormData');
     } catch (error) {
       console.error('Erro ao interpretar os dados do formulário:', error);
     }
+
+    // Remove os dados mesmo se der erro para evitar interferência em outras páginas
+    sessionStorage.removeItem('contactFormData');
   }
 });
