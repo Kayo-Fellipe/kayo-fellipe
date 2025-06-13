@@ -693,7 +693,7 @@ img {
   color: var(--color-light);
   font-weight: 700;
   font-size: 1.3rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0;
 }
 
 .testimonial-author-info p {
