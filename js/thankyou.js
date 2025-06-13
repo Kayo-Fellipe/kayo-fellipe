@@ -1,21 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Get contact form data from sessionStorage if available
+  // Executa somente se estiver na página de obrigado
+  if (!window.location.pathname.includes('obrigado.html')) return;
+
   const formData = sessionStorage.getItem('contactFormData');
-  
+
   if (formData) {
     try {
       const { name } = JSON.parse(formData);
-      
-      // If we have the user's name, personalize the message
-      if (name) {
-        const heading = document.querySelector('h1');
+
+      // Alvo seguro: título da página de obrigado
+      const heading = document.getElementById('thankYouTitle');
+      if (heading && name) {
         heading.textContent = `Obrigado, ${name}!`;
       }
-      
-      // Clear the stored data
+
+      // Limpa os dados armazenados
       sessionStorage.removeItem('contactFormData');
     } catch (error) {
-      console.error('Error parsing form data:', error);
+      console.error('Erro ao interpretar os dados do formulário:', error);
     }
   }
 });
