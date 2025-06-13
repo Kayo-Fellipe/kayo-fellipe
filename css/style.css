@@ -651,7 +651,7 @@ img {
 .testimonial-card {
   background-color: var(--color-dark-700);
   border-radius: 20px;
-  padding: 0 var(--space-6);
+  padding: 35px var(--space-6);
   display: none;
   opacity: 0;
   transform: translateX(50px);
