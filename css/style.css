@@ -645,14 +645,13 @@ img {
 .testimonials-carousel {
   position: relative;
   max-width: 900px;
-  min-height: 200px;
   margin: 0 auto;
 }
 
 .testimonial-card {
   background-color: var(--color-dark-700);
   border-radius: 20px;
-  padding: var(--space-6);
+  padding: var(--space-2);
   display: none;
   opacity: 0;
   transform: translateX(50px);
