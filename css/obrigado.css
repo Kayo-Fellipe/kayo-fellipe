@@ -1,9 +1,8 @@
 /* Thank You Message Styles */
 #thankyou-container {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 2rem auto;
   padding: 2rem;
-  text-align: center;
   display: none;
 }
 
@@ -12,18 +11,8 @@
   padding: 3rem 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
   animation: fadeIn 0.6s ease-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .check-icon {
@@ -32,16 +21,17 @@
   animation: scaleIn 0.5s ease-out 0.3s both;
 }
 
-@keyframes scaleIn {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-#thankYouTitle {
+@keyframes scaleIn {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+#thankyou-container h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #ffffff;
@@ -53,27 +43,12 @@
   color: #ffffff;
 }
 
-.back-btn {
-  display: inline-block;
-  background-color: #8A2BE2;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.25s;
-}
-
-.back-btn:hover {
-  background-color: #9932CC;
-}
-
 @media (max-width: 768px) {
   .thankyou-card {
     padding: 2rem 1rem;
   }
   
-  #thankYouTitle {
+  #thankyou-container h1 {
     font-size: 2rem;
   }
   
