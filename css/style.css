@@ -710,7 +710,7 @@ img {
   color: var(--color-light);
   font-size: 1.1rem;
   line-height: 1.7;
-  text-align: center;
+  text-align: justify; 
   font-style: italic;
 }
 
