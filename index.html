@@ -7,6 +7,7 @@
   <link rel="icon" href="assets/images/logo.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/obrigado.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -280,7 +281,7 @@
         <div class="contact-form">
           <form action="https://formsubmit.co/kayofellipefer@gmail.com" method="POST" id="contactForm">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://kayo-fellipe.vercel.app/obrigado.html">
+            <input type="hidden" name="_captcha" value="false">
             
             <div class="form-group">
               <label for="name">Seu nome</label>
@@ -304,6 +305,20 @@
             </div>
             <button type="submit" class="btn btn-primary">Enviar mensagem</button>
           </form>
+        </div>
+
+        <div id="thankyou-container" style="display: none;">
+          <div class="thankyou-card">
+            <div class="check-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h1 id="thankYouTitle">Obrigado!</h1>
+            <p>Mensagem enviada com sucesso. Em breve entrarei em contato.</p>
+            <a href="#" class="back-btn" id="backToForm">Voltar para o formulário</a>
+          </div>
         </div>
 
       </div>

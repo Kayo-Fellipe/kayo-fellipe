@@ -9,15 +9,73 @@ const subjectInput = document.getElementById('subject');
 const messageInput = document.getElementById('message');
 
 // Form validation
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   if (!validateForm()) {
-    e.preventDefault(); // impede o envio apenas se for inválido
+    e.preventDefault();
     return;
   }
 
-  // Se o formulário for válido, armazena o nome no sessionStorage
-  const name = nameInput.value.trim();
-  sessionStorage.setItem('contactFormData', JSON.stringify({ name }));
+  // Mostrar estado de carregamento
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  submitBtn.textContent = 'Enviando...';
+  submitBtn.disabled = true;
+
+  try {
+    // Enviar formulário via FormSubmit
+    const formData = new FormData(contactForm);
+    const response = await fetch(contactForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      // Mostrar mensagem de sucesso
+      showThankYouMessage();
+      contactForm.reset();
+    } else {
+      throw new Error('Falha no envio');
+    }
+  } catch (error) {
+    showFormMessage('error', 'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
+  } finally {
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  }
+});
+
+// Mostrar mensagem de obrigado
+function showThankYouMessage() {
+  const thankyouContainer = document.getElementById('thankyou-container');
+  const contactFormContainer = contactForm.closest('.contact-form');
+  
+  // Esconde o formulário
+  contactFormContainer.style.display = 'none';
+  
+  // Mostra a mensagem de obrigado
+  thankyouContainer.style.display = 'block';
+  
+  // Rola a página para a mensagem
+  thankyouContainer.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Voltar para o formulário
+document.getElementById('backToForm')?.addEventListener('click', function(e) {
+  e.preventDefault();
+  const thankyouContainer = document.getElementById('thankyou-container');
+  const contactFormContainer = contactForm.closest('.contact-form');
+  
+  // Mostra o formulário novamente
+  contactFormContainer.style.display = 'block';
+  
+  // Esconde a mensagem de obrigado
+  thankyouContainer.style.display = 'none';
+  
+  // Rola de volta para o formulário
+  contactFormContainer.scrollIntoView({ behavior: 'smooth' });
 });
 
 // Validate form inputs
@@ -38,9 +96,9 @@ function validateForm() {
     isValid = false;
   }
 
- if (phoneInput.value.trim() === '') {
-  showError(phoneInput, 'Por favor, insira seu telefone');
-  isValid = false;
+  if (phoneInput.value.trim() === '') {
+    showError(phoneInput, 'Por favor, insira seu telefone');
+    isValid = false;
   } else if (!isValidPhone(phoneInput.value)) {
     showError(phoneInput, 'Por favor, insira um telefone válido');
     isValid = false;
@@ -99,32 +157,12 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
-// Submit form
-function submitForm() {
-  // Show loading state
-  const submitBtn = contactForm.querySelector('button[type="submit"]');
-  const originalText = submitBtn.textContent;
-  submitBtn.textContent = 'Sending...';
-  submitBtn.disabled = true;
-  
-  // In a real application, you would send the form data to a server
-  // Here we'll simulate a successful submission after a short delay
-  
-  setTimeout(() => {
-    // Reset form
-    contactForm.reset();
-    
-    // Show success message
-    showFormMessage('success', 'Your message has been sent successfully!');
-    
-    // Reset button
-    submitBtn.textContent = originalText;
-    submitBtn.disabled = false;
-  }, 1500);
-}
-
 // Show form success/error message
 function showFormMessage(type, message) {
+  // Remove existing messages first
+  const existingMessages = document.querySelectorAll('.form-message');
+  existingMessages.forEach(msg => msg.remove());
+  
   // Create message element
   const messageElement = document.createElement('div');
   messageElement.className = `form-message ${type}`;
@@ -171,6 +209,7 @@ function showFormMessage(type, message) {
   // Remove message after 5 seconds
   setTimeout(() => {
     messageElement.remove();
+    messageStyle.remove();
   }, 5000);
 }
 
