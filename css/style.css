@@ -645,7 +645,7 @@ img {
 .testimonials-carousel {
   position: relative;
   max-width: 900px;
-  min-height: 400px;
+  min-height: 200px;
   margin: 0 auto;
 }
 
