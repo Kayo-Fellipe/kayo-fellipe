@@ -680,7 +680,7 @@ img {
   border-radius: 50%;
   border: 3px solid var(--color-primary);
   overflow: hidden;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .testimonial-avatar img {
@@ -692,7 +692,7 @@ img {
 .testimonial-author-info h4 {
   color: var(--color-light);
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
 
