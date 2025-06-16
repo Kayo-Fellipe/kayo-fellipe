@@ -1,57 +1,62 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
+.modal-overlay {
+  position: fixed;
+  inset: 0; /* substitui top/left/right/bottom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.4s ease;
+}
 
-    .modal-overlay {
-      position: fixed;
-      inset: 0; /* substitui top/left/right/bottom */
-      background-color: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(4px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      padding: 1rem;
-    }
+.modal-content h1 {
+  margin-bottom: 0.5rem;
+}
 
-    .modal-content {
-      background-color: #1a1a1a;
-      padding: 2rem;
-      border-radius: 12px;
-      text-align: center;
-      color: #fff;
-      max-width: 400px;
-      width: 100%;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      animation: fadeIn 0.4s ease;
-    }
+.modal-content p {
+  margin-bottom: 1.5rem;
+}
 
-    .modal-content button {
-      background-color: #8A2BE2;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 500;
-    }
+.modal-content button {
+  background-color: #8A2BE2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
 
-    .modal-content button:hover {
-      background-color: #9932CC;
-    }
+.modal-content button:hover {
+  background-color: #9932CC;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.hidden {
+  display: none;
+}
 
-    .hidden {
-      display: none;
-    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 /* Base Styles */
 :root {
   /* Color System - Updated to new palette */
