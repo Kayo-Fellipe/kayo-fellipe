@@ -1,7 +1,11 @@
-
+body, html {
+  position: relative;
+  overflow: visible; /* não pode ser hidden */
+  height: 100%;
+}
 
 .modal-overlay {
-
+  position: fixed;
   top: 0;
   left: 0;
   right: 0; /* Adicione isso */
