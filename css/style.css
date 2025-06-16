@@ -556,6 +556,13 @@ img {
   display: block;
   margin: 0 auto 1rem auto;
 }
+
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
 /* Estilizar e aumentar o botão */
 #closeModal {
   margin-top: 1.5rem;
