@@ -541,7 +541,7 @@ img {
   margin: auto;
   padding: 2rem;
   width: 80%;
-  max-width: 900px;
+  max-width: 500px;
   top: 50%;
   transform: translateY(-50%);
   text-align: center; /* Centraliza o conteúdo */
@@ -576,7 +576,7 @@ img {
 .close-modal {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 35px;
   color: var(--color-light);
   font-size: 40px;
   font-weight: bold;
