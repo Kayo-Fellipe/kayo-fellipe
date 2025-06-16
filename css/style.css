@@ -6,10 +6,10 @@ body, html {
 
 
 .modal-overlay {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 1000px;
+  right: 0px;
   bottom: 0;
   width: 100vw;
   height: 100vh;
