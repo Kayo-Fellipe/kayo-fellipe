@@ -550,7 +550,10 @@ img {
   color: #fff;
 }
 
-
+svg {
+  width: 120px;
+  height: 120px;
+}
 /* Estilizar e aumentar o botão */
 #closeModal {
   margin-top: 1.5rem;
