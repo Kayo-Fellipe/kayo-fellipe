@@ -7,9 +7,9 @@ body, html {
 
 .modal-overlay {
   position: fixed;
-  top: 2000px;
+  top: 0;
   left: 0;
-  right: 0;
+  right: 1000px;
   bottom: 0;
   width: 100vw;
   height: 100vh;
