@@ -552,8 +552,10 @@ img {
 
 /* Aumentar o SVG */
 .check-icon svg {
-  width: 120px !important;
-  height: 120px !important;
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
 /* Estilizar e aumentar o botão */
