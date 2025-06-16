@@ -49,7 +49,9 @@ body, html {
   background-color: #9932CC;
 }
 
-
+.hidden {
+  display: none;
+}
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
