@@ -13,7 +13,6 @@ body, html {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
   z-index: 99999;
