@@ -1,24 +1,19 @@
 body, html {
-  position: relative;
-  overflow: visible; /* não pode ser hidden */
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; /* Adicione isso */
-  bottom: 0; /* Adicione isso */
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(4px);
+  inset: 0; /* substitui top/left/right/bottom */
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
   z-index: 9999;
-  padding: 1rem; /* para evitar corte em telas menores */
+  padding: 1rem;
   box-sizing: border-box;
 }
 .modal-content {
