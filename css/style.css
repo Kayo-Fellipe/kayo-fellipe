@@ -550,13 +550,6 @@ img {
   color: #fff;
 }
 
-/* Aumentar o SVG */
-.check-icon svg {
-  width: 20px;
-  height: 20px;
-  display: block;
-  margin: 0 auto 1rem auto;
-}
 
 /* Estilizar e aumentar o botão */
 #closeModal {
