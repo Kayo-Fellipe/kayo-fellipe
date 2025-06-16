@@ -539,11 +539,39 @@ img {
 .modal-content {
   position: relative;
   margin: auto;
-  padding: var(--space-3);
+  padding: 2rem;
   width: 80%;
   max-width: 900px;
   top: 50%;
   transform: translateY(-50%);
+  text-align: center; /* Centraliza o conteúdo */
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  color: #fff;
+}
+
+/* Aumentar o SVG */
+.check-icon svg {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+/* Estilizar e aumentar o botão */
+#closeModal {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #8A2BE2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#closeModal:hover {
+  background-color: #6e22c0;
 }
 
 .close-modal {
