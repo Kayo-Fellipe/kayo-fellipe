@@ -655,6 +655,7 @@ img {
 .service-card p {
   color: var(--color-light);
   margin-bottom: var(--space-3);
+  text-align: justify;
 }
 
 .service-features {
