@@ -930,13 +930,7 @@ img {
   width: 100%;
 }
 
-input:-webkit-autofill,
-textarea:-webkit-autofill {
-  font-family: var(--font-main) !important;
-  font-size: 1rem !important; /* ajuste conforme o seu layout */
-  -webkit-text-fill-color: var(--color-light);
-  transition: background-color 9999s ease-in-out 0s; /* evitar alteração de cor automática */
-}
+
 
 /* Footer */
 .footer {
