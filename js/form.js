@@ -40,7 +40,11 @@ contactForm.addEventListener('submit', function(e) {
 function showThankYouModal(name) {
   const modal = document.getElementById('modal-thankyou');
   const title = document.getElementById('thankYouTitle');
-  title.textContent = `Obrigado, ${name.toUpperCase()}!`;
+
+  // Pega apenas os dois primeiros nomes, mantendo a capitalização original
+  const trimmedName = name.trim().split(/\s+/).slice(0, 2).join(' ');
+
+  title.textContent = `Obrigado, ${trimmedName}!`;
   modal.classList.remove('hidden');
 }
 
