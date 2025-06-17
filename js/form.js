@@ -90,9 +90,16 @@ function validateForm() {
 }
 
 function isValidPhone(phone) {
-  const phoneRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
+  const phoneRegex = /^\(\d{2}\)\s\d{5}-\d{4}$/;
   return phoneRegex.test(phone);
 }
+
+new Inputmask({
+  mask: "(99) 99999-9999",
+  placeholder: "_",
+  showMaskOnHover: false,
+  showMaskOnFocus: true
+}).mask(phoneInput);
 
 // Show error message
 function showError(input, message) {
@@ -108,18 +115,6 @@ function showError(input, message) {
   
   // Add error message to form group
   formGroup.appendChild(errorMessage);
-}
-
-Inputmask({
-  mask: "(99) 99999-9999",
-  placeholder: "_",
-  showMaskOnHover: false,
-  showMaskOnFocus: true
-}).mask(phoneInput);
-
-function isValidPhone(phone) {
-  const phoneRegex = /^\(\d{2}\)\s\d{5}-\d{4}$/; // com máscara
-  return phoneRegex.test(phone);
 }
 
 // Remove all error messages

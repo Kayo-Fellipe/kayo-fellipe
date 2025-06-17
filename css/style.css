@@ -930,18 +930,12 @@ img {
   width: 100%;
 }
 
-.form-group input:-webkit-autofill,
-.form-group textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px var(--color-dark-600) inset !important;
-  -webkit-text-fill-color: var(--color-light) !important;
+input:-webkit-autofill,
+textarea:-webkit-autofill {
   font-family: var(--font-main) !important;
-  font-size: 1rem !important; /* ou substitua por sua var(--font-size) se tiver */
-  transition: background-color 9999s ease-out 0s;
-}
-
-.form-group input:-webkit-autofill {
-  font-size: 1rem !important;
-  font-family: var(--font-main) !important;
+  font-size: 1rem !important; /* ajuste conforme o seu layout */
+  -webkit-text-fill-color: var(--color-light);
+  transition: background-color 9999s ease-in-out 0s; /* evitar alteração de cor automática */
 }
 
 /* Footer */
