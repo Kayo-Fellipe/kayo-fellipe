@@ -930,7 +930,12 @@ img {
   width: 100%;
 }
 
-
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  font-family: var(--font-main) !important;
+  -webkit-text-fill-color: var(--color-light);
+  transition: background-color 9999s ease-in-out 0s; /* evitar alteração de cor automática */
+}
 
 /* Footer */
 .footer {
