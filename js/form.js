@@ -89,18 +89,6 @@ function validateForm() {
   return isValid;
 }
 
-function isValidPhone(phone) {
-  const phoneRegex = /^\(\d{2}\)\s\d{5}-\d{4}$/;
-  return phoneRegex.test(phone);
-}
-
-new Inputmask({
-  mask: "(99) 99999-9999",
-  placeholder: "_",
-  showMaskOnHover: false,
-  showMaskOnFocus: true
-}).mask(phoneInput);
-
 // Show error message
 function showError(input, message) {
   const formGroup = input.parentElement;
