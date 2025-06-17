@@ -939,6 +939,11 @@ img {
   transition: background-color 9999s ease-out 0s;
 }
 
+.form-group input:-webkit-autofill {
+  font-size: 1rem !important;
+  font-family: var(--font-main) !important;
+}
+
 /* Footer */
 .footer {
   background-color: var(--color-dark-800);
