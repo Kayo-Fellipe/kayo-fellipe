@@ -285,7 +285,7 @@ img {
 #nav ul li a:hover,
 #nav ul li a.active {
   transform: scale(1.05);
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 
 .mobile-toggle {
