@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kayo Fellipe</title>
   <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
@@ -350,23 +351,14 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const phoneInput = document.querySelector('input[name="telefone"]');
-
-      phoneInput.addEventListener("input", function (e) {
-        let value = e.target.value.replace(/\D/g, ""); // Remove tudo que não é número
-
-        if (value.length > 11) value = value.slice(0, 11); // Limita a 11 dígitos
-
-        if (value.length > 6) {
-          value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
-        } else if (value.length > 2) {
-          value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
-        } else if (value.length > 0) {
-          value = `(${value}`;
-        }
-
-        e.target.value = value;
-      });
+      const phoneInput = document.querySelector('input[name="phone"]');
+      if (phoneInput) {
+        Inputmask({
+          mask: "(99) 99999-9999",
+          showMaskOnHover: false,
+          showMaskOnFocus: true,
+        }).mask(phoneInput);
+      }
     });
   </script>
 
