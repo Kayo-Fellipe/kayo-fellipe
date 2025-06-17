@@ -110,6 +110,18 @@ function showError(input, message) {
   formGroup.appendChild(errorMessage);
 }
 
+Inputmask({
+  mask: "(99) 99999-9999",
+  placeholder: "_",
+  showMaskOnHover: false,
+  showMaskOnFocus: true
+}).mask(phoneInput);
+
+function isValidPhone(phone) {
+  const phoneRegex = /^\(\d{2}\)\s\d{5}-\d{4}$/; // com máscara
+  return phoneRegex.test(phone);
+}
+
 // Remove all error messages
 function removeErrors() {
   // Remove error messages
