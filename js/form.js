@@ -94,6 +94,37 @@ function isValidPhone(phone) {
   return phoneRegex.test(phone);
 }
 
+// Função para formatar o telefone
+function formatPhoneNumber(value) {
+  // Remove tudo que não for número
+  value = value.replace(/\D/g, '');
+
+  // Aplica a máscara
+  if (value.length >= 11) {
+    return value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+  } else if (value.length >= 10) {
+    return value.replace(/^(\d{2})(\d{4})(\d{4}).*/, '($1) $2-$3');
+  }
+  return value;
+}
+
+// Formatar enquanto digita
+phoneInput.addEventListener('input', function () {
+  this.value = formatPhoneNumber(this.value);
+});
+
+// Formatar após preenchimento automático
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    phoneInput.value = formatPhoneNumber(phoneInput.value);
+  }, 100); // pequeno atraso para garantir que o valor já foi preenchido
+});
+
+// Também ao perder o foco
+phoneInput.addEventListener('blur', function () {
+  this.value = formatPhoneNumber(this.value);
+});
+
 // Show error message
 function showError(input, message) {
   const formGroup = input.parentElement;
