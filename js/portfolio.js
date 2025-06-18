@@ -165,7 +165,7 @@ const portfolioData = {
     items: [
       {
         type: "video",
-        src: "https://www.youtube.com/watch?v=RXlM8sI18LI", 
+        src: "https://photos.app.goo.gl/K5STCViV8sqX8UxD7", 
         thumbnail: "https://images.pexels.com/photos/3944091/pexels-photo-3944091.jpeg?auto=compress&cs=tinysrgb&w=200"
       },
       {
