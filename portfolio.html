@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayo Fellipe</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Portfólio - Kayo Fellipe</title>
+  <link rel="stylesheet" href="css/portfolio.css">
   <link rel="icon" href="assets/images/logo.png" type="image/png">
-  <link rel="stylesheet" href="css/responsive.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,13 +13,13 @@
   <header id="header">
     <div class="container">
       <div class="logo">
-        <a href="#home">KMF</a>
+        <a href="index.html">KMF</a>
       </div>
       <nav id="nav">
         <ul>
-          <li><a href="index.html#home" class="active">Home</a></li>
+          <li><a href="index.html#home">Home</a></li>
           <li><a href="index.html#about">Sobre</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="index.html#services">Serviços</a></li>
           <li><a href="index.html#testimonials">Feedbacks</a></li>
           <li><a href="index.html#contact">Contato</a></li>
@@ -40,105 +39,171 @@
         <h2>Meu Portfolio</h2>
         <div class="section-line"></div>
       </div>
+      
       <div class="portfolio-filter">
         <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="photo">Fotografia</button>
-        <button class="filter-btn" data-filter="video">Videografia</button>
+        <button class="filter-btn" data-filter="photography">Fotografia</button>
+        <button class="filter-btn" data-filter="videography">Videografia</button>
       </div>
+      
       <div class="portfolio-grid">
-        <!-- Photography Items -->
-        <div class="portfolio-item photo">
+        <!-- Photography Projects -->
+        <div class="portfolio-item photography">
           <div class="portfolio-img">
-            <img src="https://www.format.com/wp-content/uploads/alekzan-powell-5t5krHi1LQ8-unsplash.jpg.webp" alt="Photography">
+            <img src="https://images.pexels.com/photos/2403005/pexels-photo-2403005.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sessão de Retratos">
             <div class="portfolio-overlay">
               <div class="portfolio-info">
                 <h3>Sessão de Retratos</h3>
                 <p>Fotografia</p>
-                <a href="#" class="portfolio-link" data-type="image" data-src="https://images.pexels.com/photos/2403005/pexels-photo-2403005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                  <i class="fas fa-plus"zz></i>
-                </a>
+                <button class="portfolio-link" data-project="portraits">
+                  <i class="fas fa-plus"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="portfolio-item photo">
+
+        <div class="portfolio-item photography">
           <div class="portfolio-img">
-            <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Photography">
+            <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fotografia de Casamento">
             <div class="portfolio-overlay">
               <div class="portfolio-info">
                 <h3>Fotografia de Casamento</h3>
                 <p>Fotografia</p>
-                <a href="#" class="portfolio-link" data-type="image" data-src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <button class="portfolio-link" data-project="wedding">
                   <i class="fas fa-plus"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="portfolio-item photo">
+
+        <div class="portfolio-item photography">
           <div class="portfolio-img">
-            <img src="https://images.pexels.com/photos/4350115/pexels-photo-4350115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Photography">
+            <img src="https://images.pexels.com/photos/4350115/pexels-photo-4350115.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fotografia de Produtos">
             <div class="portfolio-overlay">
               <div class="portfolio-info">
                 <h3>Fotografia de Produtos</h3>
                 <p>Fotografia</p>
-                <a href="#" class="portfolio-link" data-type="image" data-src="https://images.pexels.com/photos/4350115/pexels-photo-4350115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <button class="portfolio-link" data-project="products">
                   <i class="fas fa-plus"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Video Items -->
-        <div class="portfolio-item video">
+
+        <div class="portfolio-item photography">
           <div class="portfolio-img">
-            <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Video">
+            <img src="https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Street Photography">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Street Photography</h3>
+                <p>Fotografia</p>
+                <button class="portfolio-link" data-project="street">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Videography Projects -->
+        <div class="portfolio-item videography">
+          <div class="portfolio-img">
+            <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding Highlight">
             <div class="portfolio-overlay">
               <div class="portfolio-info">
                 <h3>Destaque do Casamento</h3>
                 <p>Videografia</p>
-                <a href="#" class="portfolio-link" data-type="video" data-src="https://player.vimeo.com/video/341373322">
+                <button class="portfolio-link" data-project="wedding-video">
                   <i class="fas fa-play"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="portfolio-item video">
+
+        <div class="portfolio-item videography">
           <div class="portfolio-img">
-            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Video">
+            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Commercial Ad">
             <div class="portfolio-overlay">
               <div class="portfolio-info">
                 <h3>Anúncio Comercial</h3>
                 <p>Videografia</p>
-                <a href="#" class="portfolio-link" data-type="video" data-src="https://player.vimeo.com/video/557293933">
+                <button class="portfolio-link" data-project="commercial">
                   <i class="fas fa-play"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="portfolio-item video">
+
+        <div class="portfolio-item videography">
           <div class="portfolio-img">
-            <img src="https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Video">
+            <img src="https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Music Video">
             <div class="portfolio-overlay">
               <div class="portfolio-info">
                 <h3>Vídeoclipe</h3>
                 <p>Videografia</p>
-                <a href="#" class="portfolio-link" data-type="video" data-src="https://player.vimeo.com/video/461045527">
+                <button class="portfolio-link" data-project="music-video">
                   <i class="fas fa-play"></i>
-                </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item videography">
+          <div class="portfolio-img">
+            <img src="https://images.pexels.com/photos/3944091/pexels-photo-3944091.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Corporate Video">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Vídeo Corporativo</h3>
+                <p>Videografia</p>
+                <button class="portfolio-link" data-project="corporate">
+                  <i class="fas fa-play"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="portfolio-modal" class="modal">
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="gallery-modal">
       <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <div id="modal-container"></div>
+        <button class="close-modal" id="close-modal">
+          <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="gallery-container">
+          <div class="gallery-header">
+            <h3 id="gallery-title"></h3>
+            <div class="gallery-counter">
+              <span id="current-index">1</span> / <span id="total-items">1</span>
+            </div>
+          </div>
+          
+          <div class="gallery-content">
+            <button class="gallery-nav prev" id="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="gallery-main" id="gallery-main">
+              <!-- Dynamic content will be inserted here -->
+            </div>
+            
+            <button class="gallery-nav next" id="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          
+          <div class="gallery-thumbnails" id="gallery-thumbnails">
+            <!-- Thumbnail navigation will be inserted here -->
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -147,7 +212,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <a href="#home">KMF</a>
+          <a href="index.html">KMF</a>
           <p>Videomaker | Fotógrafo | Editor de vídeo</p>
         </div>
         <div class="footer-social">
@@ -166,6 +231,7 @@
     <i class="fas fa-arrow-up"></i>
   </div>
 
-  <script type="module" src="js/script.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
