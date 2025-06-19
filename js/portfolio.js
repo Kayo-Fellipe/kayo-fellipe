@@ -104,62 +104,13 @@ const portfolioData = {
     ]
   },
   
-  products: {
-    title: "Fotografia de Produtos",
-    type: "photography",
-    items: [
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/4350115/pexels-photo-4350115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/4350115/pexels-photo-4350115.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/1054775/pexels-photo-1054775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1054775/pexels-photo-1054775.jpeg?auto=compress&cs=tinysrgb&w=200"
-      }
-    ]
-  },
-  
-  street: {
-    title: "Street Photography",
-    type: "photography",
-    items: [
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/1043459/pexels-photo-1043459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1043459/pexels-photo-1043459.jpeg?auto=compress&cs=tinysrgb&w=200"
-      }
-    ]
-  },
-  
   renascer: {
     title: "Destaque do Casamento",
     type: "videography",
     items: [
       {
         type: "youtube",
-        src: "BAaEWTn5BNA3UFEb",
+        src: "G10nMDgvtrPHAqnN",
         thumbnail: "https://i.postimg.cc/D0Wp043k/IMG-4821.jpg"
       },
     ]
