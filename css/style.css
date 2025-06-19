@@ -304,7 +304,7 @@ img {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url('/assets/images/the-black-background.jpg');
+  background-image: url('https://i.postimg.cc/N0ddcM6R/the-black-background.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
