@@ -1,60 +1,105 @@
 // Portfolio Data - Define all projects and their galleries
 const portfolioData = {
   portraits: {
-    title: "Sessão de Retratos",
+    title: "Sessão Leonardo & Monique",
     type: "photography",
     items: [
       {
         type: "image",
-        src: "https://i.postimg.cc/Y06mXkVZ/DSC-0088-VSCO.jpg",
-        thumbnail: "https://img.freepik.com/fotos-gratis/jovem-barbudo-com-camisa-listrada_273609-5677.jpg?semt=ais_hybrid&w=740"
+        src: "https://i.postimg.cc/CKZPMfGG/DSC-0088-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/CKZPMfGG/DSC-0088-VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://images.pexels.com/photos/1385472/pexels-photo-1385472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1385472/pexels-photo-1385472.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/VsXhbM34/DSC-0081-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/VsXhbM34/DSC-0081-VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/K88pVW4s/DSC-0058-VSCO-Original.jpg",
+        thumbnail: "https://i.postimg.cc/K88pVW4s/DSC-0058-VSCO-Original.jpg"
       },
       {
         type: "image",
-        src: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/fTKg8sW9/DSC-0059-VSCO-Original.jpg",
+        thumbnail: "https://i.postimg.cc/fTKg8sW9/DSC-0059-VSCO-Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/wBSW1T2S/DSC-0092-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/wBSW1T2S/DSC-0092-VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/fLm8mngk/DSC-0097-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/fLm8mngk/DSC-0097-VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/D0hBcjt6/DSC-0043-VSCO-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/D0hBcjt6/DSC-0043-VSCO-VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/L4kysS1b/DSC-0104-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/L4kysS1b/DSC-0104-VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/9QggjB7X/DSC-0017-VSCO-Original.jpg",
+        thumbnail: "https://i.postimg.cc/9QggjB7X/DSC-0017-VSCO-Original.jpg"
       }
     ]
   },
   
   wedding: {
-    title: "Fotografia de Casamento",
+    title: "Sessão Evandro & Pamella",
     type: "photography",
     items: [
       {
         type: "image",
-        src: "https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/mkGBy4Ln/DSC0019-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/mkGBy4Ln/DSC0019-VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/4dpTd06Q/DSC0007-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/4dpTd06Q/DSC0007-VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://images.pexels.com/photos/1455872/pexels-photo-1455872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1455872/pexels-photo-1455872.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/sXW3WxrS/DSC0006-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/sXW3WxrS/DSC0006-VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/Xq36ygxS/DSC0027-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/Xq36ygxS/DSC0027-VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://images.pexels.com/photos/1444424/pexels-photo-1444424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1444424/pexels-photo-1444424.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/kg59cfC7/Full-Size-Render-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/kg59cfC7/Full-Size-Render-VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/BvkqtDd4/DSC0040-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/BvkqtDd4/DSC0040-VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/rsCchHzw/DSC0046-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/rsCchHzw/DSC0046-VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/ryS8FDg2/DSC0050-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/ryS8FDg2/DSC0050-VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/3J1YmzPL/DSC0060-VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/3J1YmzPL/DSC0060-VSCO.jpg"
       }
     ]
   },
