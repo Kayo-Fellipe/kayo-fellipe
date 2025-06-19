@@ -1,6 +1,6 @@
 // Portfolio Data - Define all projects and their galleries
 const portfolioData = {
-  portraits: {
+  sessao_leonardo_monique: {
     title: "Sessão Leonardo & Monique",
     type: "photography",
     items: [
@@ -52,7 +52,7 @@ const portfolioData = {
     ]
   },
   
-  wedding: {
+  sessao_evandro_pamella: {
     title: "Sessão Evandro & Pamella",
     type: "photography",
     items: [
@@ -103,15 +103,81 @@ const portfolioData = {
       }
     ]
   },
+  sessao_ana_rodrigues: {
+    title: "Sessão Ana Rodrigues",
+    type: "photography",
+    items: [
+      {
+        type: "image",
+        src: "https://i.postimg.cc/L8hcgtnJ/IMG-5564.jpg",
+        thumbnail: "https://i.postimg.cc/L8hcgtnJ/IMG-5564.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/BQhWvYQW/DSC00467.jpg",
+        thumbnail: "https://i.postimg.cc/BQhWvYQW/DSC00467.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/HndGrFym/IMG-5562.jpg",
+        thumbnail: "https://i.postimg.cc/HndGrFym/IMG-5562.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/MKZ2q2wb/IMG-5563.jpg",
+        thumbnail: "https://i.postimg.cc/MKZ2q2wb/IMG-5563.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/MKgDtV9M/DSC00645.jpg",
+        thumbnail: "https://i.postimg.cc/MKgDtV9M/DSC00645.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/Z53LQnQf/IMG-5561.jpg",
+        thumbnail: "https://i.postimg.cc/Z53LQnQf/IMG-5561.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/Jn7ctqzg/DSC00651.jpg",
+        thumbnail: "https://i.postimg.cc/Jn7ctqzg/DSC00651.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/QM3qZsGj/DSC00690.jpg",
+        thumbnail: "https://i.postimg.cc/QM3qZsGj/DSC00690.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/XJwS7nXx/DSC00653.jpg",
+        thumbnail: "https://i.postimg.cc/XJwS7nXx/DSC00653.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/1zrr9Tsw/DSC00596.jpg",
+        thumbnail: "https://i.postimg.cc/1zrr9Tsw/DSC00596.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/63HVZv7Q/DSC00714.jpg",
+        thumbnail: "https://i.postimg.cc/63HVZv7Q/DSC00714.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/xCrV2Xjc/DSC00482.jpg",
+        thumbnail: "https://i.postimg.cc/xCrV2Xjc/DSC00482.jpg"
+      }
+    ]
+  },
   
   renascer: {
-    title: "Destaque do Casamento",
+    title: "Filmagem Ana Rodrigues",
     type: "videography",
     items: [
       {
         type: "youtube",
         src: "nQm9rewdjBs",
-        thumbnail: "https://i.postimg.cc/D0Wp043k/IMG-4821.jpg"
+        thumbnail: "https://i.postimg.cc/cCmpwTRn/DSC00876.jpg"
       },
     ]
   },
