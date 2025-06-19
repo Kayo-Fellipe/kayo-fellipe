@@ -6,8 +6,8 @@ const portfolioData = {
     items: [
       {
         type: "image",
-        src: "https://images.pexels.com/photos/2403005/pexels-photo-2403005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/2403005/pexels-photo-2403005.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://i.postimg.cc/Y06mXkVZ/DSC-0088-VSCO.jpg",
+        thumbnail: "https://img.freepik.com/fotos-gratis/jovem-barbudo-com-camisa-listrada_273609-5677.jpg?semt=ais_hybrid&w=740"
       },
       {
         type: "image",
