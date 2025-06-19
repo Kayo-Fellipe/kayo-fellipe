@@ -153,49 +153,15 @@ const portfolioData = {
     ]
   },
   
-  "wedding-video": {
+  renascer: {
     title: "Destaque do Casamento",
     type: "videography",
     items: [
       {
-        type: "video",
-        src: "https://youtu.be/nQm9rewdjBs?si=BAaEWTn5BNA3UFEb",
-        thumbnail: "https://youtu.be/nQm9rewdjBs?si=BAaEWTn5BNA3UFEb"
+        type: "youtube",
+        src: "BAaEWTn5BNA3UFEb",
+        thumbnail: "https://i.postimg.cc/D0Wp043k/IMG-4821.jpg"
       },
-    ]
-  },
-  
-  commercial: {
-    title: "Anúncio Comercial",
-    type: "videography",
-    items: [
-      {
-        type: "video",
-        src: "https://player.vimeo.com/video/557293933?autoplay=1",
-        thumbnail: "https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=200"
-      }
-    ]
-  },
-  
-  "music-video": {
-    title: "Vídeoclipe",
-    type: "videography",
-    items: [
-      {
-        type: "video",
-        src: "https://player.vimeo.com/video/461045527?autoplay=1",
-        thumbnail: "https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=200"
-      }
     ]
   },
   
@@ -206,17 +172,6 @@ const portfolioData = {
       {
         type: "youtube",
         src: "RXlM8sI18LI", // Apenas o ID do vídeo do YouTube
-        thumbnail: "https://images.pexels.com/photos/3944091/pexels-photo-3944091.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "external-link",
-        src: "https://photos.app.goo.gl/MiHDoAHPtmF4Jf2QA",
-        title: "Ver Galeria no Google Photos",
-        thumbnail: "https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=200"
-      },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/3944091/pexels-photo-3944091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         thumbnail: "https://images.pexels.com/photos/3944091/pexels-photo-3944091.jpeg?auto=compress&cs=tinysrgb&w=200"
       }
     ]
