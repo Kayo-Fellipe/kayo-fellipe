@@ -159,14 +159,9 @@ const portfolioData = {
     items: [
       {
         type: "video",
-        src: "https://player.vimeo.com/video/341373322?autoplay=1",
-        thumbnail: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=200"
+        src: "https://youtu.be/nQm9rewdjBs?si=BAaEWTn5BNA3UFEb",
+        thumbnail: "https://youtu.be/nQm9rewdjBs?si=BAaEWTn5BNA3UFEb"
       },
-      {
-        type: "image",
-        src: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        thumbnail: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=200"
-      }
     ]
   },
   
