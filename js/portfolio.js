@@ -159,8 +159,8 @@ const portfolioData = {
     items: [
       {
         type: "video",
-        src: "https://youtu.be/nQm9rewdjBs?si=BAaEWTn5BNA3UFEb",
-        thumbnail: "https://youtu.be/nQm9rewdjBs?si=BAaEWTn5BNA3UFEb"
+        src: "https://www.youtube.com/watch?v=nQm9rewdjBs",
+        thumbnail: "https://www.youtube.com/watch?v=nQm9rewdjBs"
       },
     ]
   }
