@@ -116,17 +116,6 @@ const portfolioData = {
     ]
   },
   
-  corporate: {
-    title: "Vídeo Corporativo",
-    type: "videography",
-    items: [
-      {
-        type: "youtube",
-        src: "RXlM8sI18LI", // Apenas o ID do vídeo do YouTube
-        thumbnail: "https://images.pexels.com/photos/3944091/pexels-photo-3944091.jpeg?auto=compress&cs=tinysrgb&w=200"
-      }
-    ]
-  }
 };
 
 
