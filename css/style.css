@@ -659,7 +659,6 @@ img {
 
 .service-features {
   list-style: none;
-
 }
 
 .service-features li {
@@ -667,10 +666,14 @@ img {
   color: var(--color-light);
   position: relative;
   padding-left: var(--space-3);
-
 }
 
-
+.service-features li::before {
+  content: '→';
+  color: var(--color-primary);
+  position: absolute;
+  left: 10px;
+}
 
 /* Testimonials Section - New Design */
 .testimonials-section {
