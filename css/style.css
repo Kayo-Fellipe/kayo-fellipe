@@ -657,25 +657,7 @@ img {
   text-align: justify;
 }
 
-.service-features {
-  list-style: none;
-}
 
-.service-features li {
-  padding: var(--space-1) 0;
-  color: var(--color-light);
-  position: relative;
-  padding-left: var(--space-3);
-  margin-right: 8px;
-}
-
-.service-features li::before {
-  content: '→';
-  color: var(--color-primary);
-  position: absolute;
-  left: 0;
-  margin-right: 8px;
-}
 
 /* Testimonials Section - New Design */
 .testimonials-section {
