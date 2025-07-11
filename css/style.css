@@ -672,7 +672,7 @@ img {
   color: var(--color-primary);
   position: absolute;
   left: 0;
-  top: 2px; /* Ajuste vertical se necessário */
+  top: 0; /* Ajuste vertical se necessário */
   font-size: 1rem;
 }
 
