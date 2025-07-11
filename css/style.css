@@ -672,7 +672,7 @@ img {
   content: '→';
   color: var(--color-primary);
   position: absolute;
-  left: 10px;
+  left: -10px;
 }
 
 /* Testimonials Section - New Design */
