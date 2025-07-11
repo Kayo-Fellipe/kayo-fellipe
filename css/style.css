@@ -659,7 +659,6 @@ img {
 
 .service-features {
   list-style: none;
-  margin-right: 8px;
 }
 
 .service-features li {
@@ -674,6 +673,7 @@ img {
   color: var(--color-primary);
   position: absolute;
   left: 0;
+  margin-right: 8px;
 }
 
 /* Testimonials Section - New Design */
