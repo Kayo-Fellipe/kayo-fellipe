@@ -662,7 +662,7 @@ img {
 }
 
 .service-features li {
-  padding: var(--space-1) 0;
+  padding-left: 10px;
   color: var(--color-light);
   position: relative;
   padding-left: var(--space-3);
@@ -672,7 +672,7 @@ img {
   content: '→';
   color: var(--color-primary);
   position: absolute;
-  left: -10px;
+  left: 0;
 }
 
 /* Testimonials Section - New Design */
