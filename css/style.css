@@ -665,7 +665,6 @@ img {
   padding-left: 10px;
   color: var(--color-light);
   position: relative;
-  padding-left: var(--space-3);
 }
 
 .service-features li::before {
