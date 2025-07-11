@@ -643,7 +643,6 @@ img {
   font-size: 2.5rem;
   color: var(--color-primary);
   margin-bottom: var(--space-3);
-  margin-right: 8px;
 }
 
 .service-card h3 {
@@ -660,6 +659,7 @@ img {
 
 .service-features {
   list-style: none;
+  margin-right: 8px;
 }
 
 .service-features li {
