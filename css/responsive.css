@@ -55,6 +55,43 @@
     margin-bottom: var(--space-4);
   }
 
+  .documentary-content {
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .documentary-video {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    display: block;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .documentary-description {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .documentary-description h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -62,6 +99,10 @@
 
   .footer-logo {
     margin-bottom: var(--space-3);
+  }
+
+  .footer-logo p{
+    font-size: 0.9rem
   }
 }
 
@@ -135,6 +176,41 @@
     width: 95%;
   }
 
+  .documentary-content {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .documentary-video {
+    width: 100%;
+    order: 1;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-bottom: var(--space-4);
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .documentary-description {
+    order: 2;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .documentary-description h3 {
+    font-size: 1.8rem;
+  }
   .testimonial-content {
     padding: var(--space-1);
   }
@@ -153,6 +229,10 @@
 @media only screen and (max-width: 576px) {
   .hero-content h1 {
     font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem
   }
 
   .cta-buttons .btn {
@@ -183,6 +263,22 @@
     margin-bottom: var(--space-2);
   }
 
+  .documentary-content {
+    gap: var(--space-3);
+  }
+
+  .video-container {
+    margin-bottom: var(--space-3);
+    border-radius: 12px;
+  }
+  .documentary-description h3 {
+    font-size: 1.6rem;
+  }
+
+  .documentary-description p {
+    font-size: 1rem;
+  }
+
   .contact-content {
     gap: var(--space-3);
   }
@@ -190,5 +286,9 @@
   .social-icon {
     width: 35px;
     height: 35px;
+  }
+
+  .footer-logo p{
+    font-size: 0.8rem
   }
 }
