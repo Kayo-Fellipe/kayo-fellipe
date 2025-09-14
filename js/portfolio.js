@@ -366,7 +366,7 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
   filmagem_nicolas_lays: {
     title: "Filmagem Nicolas & Lays",
     type: "videography",
-    date: "2025-07-05",
+    date: "2025-05-05",
     category: "Ensaios",
     items: [
       {
