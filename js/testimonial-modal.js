@@ -12,7 +12,6 @@ const fileUploadPlaceholder = document.querySelector('.file-upload-placeholder')
 
 // Form inputs
 const testimonialNameInput = document.getElementById('testimonial-name');
-const testimonialServiceInput = document.getElementById('testimonial-service');
 const testimonialMessageInput = document.getElementById('testimonial-message');
 const testimonialImprovementInput = document.getElementById('testimonial-improvement');
 
@@ -100,7 +99,6 @@ testimonialForm.addEventListener('submit', function(e) {
   
   // Add all form fields to FormData
   formData.append('nome', testimonialNameInput.value.trim());
-  formData.append('servico', testimonialServiceInput.value);
   formData.append('depoimento', testimonialMessageInput.value.trim());
   formData.append('melhorias', testimonialImprovementInput.value.trim());
   
@@ -150,12 +148,6 @@ function validateTestimonialForm() {
     isValid = false;
   } else if (testimonialNameInput.value.trim().length < 2) {
     showError(testimonialNameInput, 'O nome deve ter pelo menos 2 caracteres');
-    isValid = false;
-  }
-  
-  // Validate service
-  if (testimonialServiceInput.value === '') {
-    showError(testimonialServiceInput, 'Por favor, selecione o serviço realizado');
     isValid = false;
   }
   
@@ -212,7 +204,7 @@ function removeTestimonialErrors() {
   errorMessages.forEach(error => error.remove());
   
   // Remove error class from inputs
-  const inputs = [testimonialNameInput, testimonialServiceInput, testimonialMessageInput, photoInput];
+  const inputs = [testimonialNameInput, testimonialMessageInput, photoInput];
   inputs.forEach(input => {
     input.classList.remove('error-input');
   });
@@ -341,7 +333,7 @@ function showErrorMessage() {
 }
 
 // Add input event listeners to clear errors on typing
-const testimonialInputs = [testimonialNameInput, testimonialServiceInput, testimonialMessageInput];
+const testimonialInputs = [testimonialNameInput, testimonialMessageInput];
 testimonialInputs.forEach(input => {
   input.addEventListener('input', () => {
     // Remove error class

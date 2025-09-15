@@ -106,9 +106,6 @@ function createTestimonialCard(testimonial) {
   card.className = 'testimonial-card';
   card.setAttribute('data-firebase-id', testimonial.id);
   
-  // Get service display name
-  const serviceDisplayName = getServiceDisplayName(testimonial.service);
-  
   // Default avatar if no photo provided
   const avatarSrc = testimonial.photoURL || 'https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
   
@@ -119,7 +116,7 @@ function createTestimonialCard(testimonial) {
       </div>
       <div class="testimonial-author-info">
         <h4>${testimonial.name}</h4>
-        <p>${serviceDisplayName}</p>
+        <p>Cliente</p>
       </div>
     </div>
     <div class="testimonial-content">
@@ -130,26 +127,6 @@ function createTestimonialCard(testimonial) {
   `;
   
   return card;
-}
-
-// Get service display name
-function getServiceDisplayName(serviceValue) {
-  const serviceMap = {
-    'filmagem-casamento': 'Filmagem - Casamentos',
-    'filmagem-corporativo': 'Filmagem - Corporativo',
-    'filmagem-imobiliario': 'Filmagem - Imobiliário',
-    'filmagem-publicidade': 'Filmagem - Publicidade',
-    'fotografia-ensaios': 'Fotografia - Ensaios',
-    'fotografia-casamento': 'Fotografia - Casamentos',
-    'fotografia-imoveis': 'Fotografia - Imóveis',
-    'fotografia-esportivos': 'Fotografia - Esportivos',
-    'edicao-criativa': 'Edição - Criativa',
-    'edicao-correcao': 'Edição - Correção',
-    'edicao-redes-sociais': 'Edição - Redes Sociais',
-    'edicao-trilha': 'Edição - Trilha Sonora'
-  };
-  
-  return serviceMap[serviceValue] || 'Cliente';
 }
 
 // Refresh carousel after adding new testimonials
