@@ -54,12 +54,14 @@ photoInput.addEventListener('change', function(e) {
     // Validate file type
     if (!file.type.startsWith('image/')) {
       showError(photoInput, 'Por favor, selecione apenas arquivos de imagem');
+      photoInput.value = '';
       return;
     }
     
     // Validate file size (max 5MB)
     if (file.size > 5 * 1024 * 1024) {
       showError(photoInput, 'A imagem deve ter no máximo 5MB');
+      photoInput.value = '';
       return;
     }
     
@@ -94,15 +96,28 @@ testimonialForm.addEventListener('submit', function(e) {
   submitBtn.disabled = true;
   
   // Create FormData for file upload
-  const formData = new FormData(testimonialForm);
+  const formData = new FormData();
   
-  // Submit form using fetch
-  fetch(testimonialForm.action, {
+  // Add all form fields to FormData
+  formData.append('nome', testimonialNameInput.value.trim());
+  formData.append('servico', testimonialServiceInput.value);
+  formData.append('depoimento', testimonialMessageInput.value.trim());
+  formData.append('melhorias', testimonialImprovementInput.value.trim());
+  
+  // Add photo if selected
+  if (photoInput.files[0]) {
+    formData.append('foto', photoInput.files[0]);
+  }
+  
+  // Add FormSubmit configuration
+  formData.append('_captcha', 'false');
+  formData.append('_subject', 'Novo Depoimento - Kayo Portfolio');
+  formData.append('_next', window.location.href + '?testimonial=success');
+  
+  // Submit form using fetch with proper FormData handling
+  fetch('https://formsubmit.co/kayofellipefer@gmail.com', {
     method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
+    body: formData
   })
   .then(response => {
     if (response.ok) {
@@ -133,6 +148,9 @@ function validateTestimonialForm() {
   if (testimonialNameInput.value.trim() === '') {
     showError(testimonialNameInput, 'Por favor, insira seu nome');
     isValid = false;
+  } else if (testimonialNameInput.value.trim().length < 2) {
+    showError(testimonialNameInput, 'O nome deve ter pelo menos 2 caracteres');
+    isValid = false;
   }
   
   // Validate service
@@ -150,12 +168,30 @@ function validateTestimonialForm() {
     isValid = false;
   }
   
+  // Validate photo if provided
+  if (photoInput.files[0]) {
+    const file = photoInput.files[0];
+    if (!file.type.startsWith('image/')) {
+      showError(photoInput, 'Por favor, selecione apenas arquivos de imagem');
+      isValid = false;
+    } else if (file.size > 5 * 1024 * 1024) {
+      showError(photoInput, 'A imagem deve ter no máximo 5MB');
+      isValid = false;
+    }
+  }
+  
   return isValid;
 }
 
 // Show error message
 function showError(input, message) {
   const formGroup = input.parentElement;
+  
+  // Remove existing error message
+  const existingError = formGroup.querySelector('.error-message');
+  if (existingError) {
+    existingError.remove();
+  }
   
   // Create error message element
   const errorMessage = document.createElement('p');
@@ -186,6 +222,7 @@ function removeTestimonialErrors() {
 function resetForm() {
   testimonialForm.reset();
   photoPreview.classList.add('hidden');
+  photoPreview.src = '';
   fileUploadPlaceholder.style.display = 'flex';
   removeTestimonialErrors();
 }
@@ -324,5 +361,15 @@ photoInput.addEventListener('change', () => {
   const errorMessage = photoInput.parentElement.querySelector('.error-message');
   if (errorMessage) {
     errorMessage.remove();
+  }
+});
+
+// Check for success parameter in URL
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('testimonial') === 'success') {
+    showSuccessMessage();
+    // Clean URL
+    window.history.replaceState({}, document.title, window.location.pathname);
   }
 });
