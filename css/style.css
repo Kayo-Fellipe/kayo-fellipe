@@ -4,8 +4,6 @@ body, html {
   height: 100%;
 }
 
-
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -247,13 +245,15 @@ img {
   background-color: transparent;
   z-index: 1000;
   transition: var(--transition);
-  padding: var(--space-2) 0;
+  padding: var(--space-4) 0;
 }
 
 #header.scrolled {
-  background-color: var(--color-dark-800);
+  background-color: rgba(0, 0, 0, 0.3); /* ajuste a opacidade */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: var(--space-1) 0;
+  padding: var(--space-3) 0;
 }
 
 #header .container {
@@ -277,18 +277,11 @@ img {
 }
 
 #nav ul li a {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.8rem;
   position: relative;
   transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
   display: inline-block;
   color: var(--color-light);
-}
-
-#nav ul li a:hover,
-#nav ul li a.active {
-  transform: scale(1.05);
-  color: #8a2be2;
 }
 
 .mobile-toggle {
@@ -337,16 +330,16 @@ img {
 .hero-content h1 {
   font-size: 2.5rem;
   color: var(--color-light);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-1);
   opacity: 0;
   transform: translateY(20px);
   animation: fade-in 0.6s ease forwards;
 }
 
 .hero-content p {
-  font-size: 1.0rem;
+  font-size: 1.2rem;
   color: var(--color-light);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
   opacity: 0;
   transform: translateY(20px);
 }
@@ -990,7 +983,6 @@ img {
 .whatsapp-btn .btn {
   width: 100%;
 }
-
 .contact-form {
   flex: 1;
   background-color: var(--color-dark-700);
