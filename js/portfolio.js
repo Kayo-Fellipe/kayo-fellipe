@@ -6,6 +6,11 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
     category: "Ensaios",
     items: [
       {
+        type: "youtube",
+        src: "cAahx1drEm0",
+        thumbnail: "https://i.postimg.cc/N0f9ML3N/DSC01281-Original.jpg"
+      },
+      {
         type: "image",
         src: "https://i.postimg.cc/52mQb8RY/DSC01270-Original.jpg",
         thumbnail: "https://i.postimg.cc/52mQb8RY/DSC01270-Original.jpg"
@@ -39,6 +44,11 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
     date: "2025-07-05",
     category: "Ensaios",
     items: [
+      {
+        type: "youtube",
+        src: "_2SUEnHmTNg",
+        thumbnail: "https://i.postimg.cc/dQ8Tj714/DSC01249-Original.jpg"
+      },
       {
         type: "image",
         src: "https://i.postimg.cc/TYYBJD06/DSC-0234-Original.jpg",
@@ -178,6 +188,11 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
     date: "2025-04-20",
     category: "Ensaios",
     items: [
+      {
+        type: "youtube",
+        src: "nQm9rewdjBs",
+        thumbnail: "https://i.postimg.cc/cCmpwTRn/DSC00876.jpg"
+      },
       {
         type: "image",
         src: "https://i.postimg.cc/L8hcgtnJ/IMG-5564.jpg",
@@ -346,48 +361,6 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
         src: "https://i.postimg.cc/3J1YmzPL/DSC0060-VSCO.jpg",
         thumbnail: "https://i.postimg.cc/3J1YmzPL/DSC0060-VSCO.jpg"
       }
-    ]
-  },
-
-  filmagem_lucaszanette_a_kriptonita: {
-    title: "Filmagem Lucas Zanette",
-    type: "videography",
-    date: "2025-07-20",
-    category: "Ensaios",
-    items: [
-      {
-        type: "youtube",
-        src: "cAahx1drEm0",
-        thumbnail: "https://i.postimg.cc/N0f9ML3N/DSC01281-Original.jpg"
-      },
-    ]
-  },
-
-  filmagem_nicolas_lays: {
-    title: "Filmagem Nicolas & Lays",
-    type: "videography",
-    date: "2025-05-05",
-    category: "Ensaios",
-    items: [
-      {
-        type: "youtube",
-        src: "_2SUEnHmTNg",
-        thumbnail: "https://i.postimg.cc/dQ8Tj714/DSC01249-Original.jpg"
-      },
-    ]
-  },
-  
-  filmagem_anarodrigues: {
-    title: "Filmagem Ana Rodrigues",
-    type: "videography",
-    date: "2025-04-20",
-    category: "Ensaios",
-    items: [
-      {
-        type: "youtube",
-        src: "nQm9rewdjBs",
-        thumbnail: "https://i.postimg.cc/cCmpwTRn/DSC00876.jpg"
-      },
     ]
   },
 };

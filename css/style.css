@@ -184,6 +184,10 @@ img {
   color: var(--color-light);
 }
 
+.section-header p{
+  font-size: 1rem;
+}
+
 .section-line {
   width: 80px;
   height: 3px;
@@ -408,6 +412,7 @@ img {
 .about-text p {
   margin-bottom: var(--space-3);
   color: var(--color-light);
+  font-size: 1rem;
 }
 
 /* Portfolio Section */
@@ -824,7 +829,7 @@ img {
 
 .testimonial-text {
   color: var(--color-light);
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.7;
   text-align: justify; 
   font-style: italic;
@@ -866,6 +871,10 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+
+.add-testimonial-section p{
+  font-size: 1rem;
 }
 
 .add-testimonial-content {
