@@ -1,6 +1,6 @@
 // Portfolio Data - Define all projects and their galleries
 const portfolioData = {sessao_lucaszanette_a_kriptonita: {
-    title: "Sessão Lucas Zanette",
+    title: "Lucas Zanette",
     type: "photography",
     date: "2025-07-20",
     category: "Ensaios",
@@ -38,8 +38,8 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
     ]
   },
 
-  sessao_lays_nicolas: {
-    title: "Sessão Lays & Nicolas",
+  sessao_nicolas_lays: {
+    title: "Nicolas & Lays",
     type: "photography",
     date: "2025-07-05",
     category: "Ensaios",
@@ -183,7 +183,7 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
   },
 
   sessao_ana_rodrigues: {
-    title: "Sessão Ana Rodrigues",
+    title: "Ana Rodrigues",
     type: "photography",
     date: "2025-04-20",
     category: "Ensaios",
@@ -257,7 +257,7 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
   },
 
   sessao_leonardo_monique: {
-    title: "Sessão Leonardo & Monique",
+    title: "Leonardo & Monique",
     type: "photography",
     date: "2025-01-12",
     category: "Ensaios",
@@ -311,7 +311,7 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
   },
   
   sessao_evandro_pamella: {
-    title: "Sessão Evandro & Pamella",
+    title: "Evandro & Pamella",
     type: "photography",
     date: "2024-12-24",
     category: "Ensaios",
