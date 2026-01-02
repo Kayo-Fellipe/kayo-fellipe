@@ -679,7 +679,7 @@ img {
 
 .documentary-description p {
   color: var(--color-light);
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.7;
   margin-bottom: var(--space-3);
   text-align: justify;
