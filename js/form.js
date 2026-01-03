@@ -206,26 +206,26 @@ function showFormMessage(type, message) {
     }
     
     .form-message.success {
-      background-color: rgba(16, 185, 129, 0.2);
-      color: #10b981;
-      border: 1px solid #10b981;
+      background-color: rgba(0,0,0,0.04);
+      color: var(--color-dark);
+      border: 1px solid var(--color-dark-600);
     }
-    
+
     .form-message.error {
-      background-color: rgba(239, 68, 68, 0.2);
-      color: #ef4444;
-      border: 1px solid #ef4444;
+      background-color: rgba(0,0,0,0.04);
+      color: var(--color-error);
+      border: 1px solid var(--color-error);
     }
-    
+
     .error-message {
-      color: #ef4444;
+      color: var(--color-error);
       font-size: 0.85rem;
       margin-top: 4px;
       margin-bottom: 0;
     }
-    
+
     .error-input {
-      border-color: #ef4444 !important;
+      border-color: var(--color-error) !important;
     }
   `;
   document.head.appendChild(messageStyle);

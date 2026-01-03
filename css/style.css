@@ -21,7 +21,7 @@ body, html {
 }
 
 .modal-content {
-  background-color: #1a1a1a;
+  background-color: var(--color-dark-800);
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
@@ -45,8 +45,8 @@ body, html {
 }
 
 .modal-content button {
-  background-color: #8A2BE2;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 6px;
@@ -55,7 +55,7 @@ body, html {
 }
 
 .modal-content button:hover {
-  background-color: #9932CC;
+  background-color: var(--color-primary-light);
 }
 
 .hidden {
@@ -68,27 +68,35 @@ body, html {
 }
 /* Base Styles */
 :root {
-  /* Color System - Updated to new palette */
-  --color-primary: #8A2BE2;
-  --color-primary-light: #9932CC;
-  --color-primary-dark: #7B68EE;
-  
-  --color-dark: #121212;
+  /* Neutral color system - Black/White/Gray palette */
+  --color-primary: #121212; /* main black */
+  --color-primary-light: #2a2a2a; /* slightly lighter black for hover */
+  --color-primary-dark: #0d0d0d; /* deeper black */
+
+  --color-dark: #121212; /* semantic black */
   --color-dark-800: #1a1a1a;
   --color-dark-700: #2a2a2a;
   --color-dark-600: #333333;
-  
-  --color-light: #ffffff;
+
+  --color-light: #f5f5f5; /* main white */
   --color-light-800: #f5f5f5;
   --color-light-700: #e5e5e5;
   --color-light-600: #d4d4d4;
-  
-  --color-gray: #6b7280;
-  --color-gray-light: #9ca3af;
-  
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
+
+  --color-gray: #8a8a8a;
+  --color-gray-light: #bdbdbd;
+
+  /* Surface / background tokens for better harmony */
+  --bg: #0b0b0b; /* page background - slightly darker than main black */
+  --surface: #121212; /* primary surface */
+  --surface-1: #1a1a1a; /* elevated surface */
+  --muted-text: #cfcfcf; /* secondary text on dark backgrounds */
+  --surface-light: #f7f7f7; /* slightly off-white for light sections */
+
+  /* Status colors - muted neutrals (no vibrant colors) */
+  --color-success: #2f6b2f;
+  --color-warning: #8a6b2f;
+  --color-error: #6b2f2f;
   
   /* Typography */
   --font-main: 'Helvetica Neue', Arial, sans-serif;
@@ -125,7 +133,7 @@ body {
   font-family: var(--font-main);
   line-height: 1.6;
   color: var(--color-light);
-  background-color: var(--color-dark);
+  background-color: var(--bg);
   overflow-x: hidden;
 }
 
@@ -191,9 +199,28 @@ img {
 .section-line {
   width: 80px;
   height: 3px;
-  background-color: var(--color-primary);
+  background-color: var(--color-dark-600);
   margin: 0 auto;
 }
+
+/* Cases / Projects section: light background to highlight work */
+.cases-section {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.cases-section .section-header h2,
+.cases-section p,
+.cases-section .section-line {
+  color: var(--color-dark);
+}
+
+/* Buttons on light backgrounds: dark button */
+.cases-section .btn-primary {
+  background-color: var(--color-dark-700);
+  color: var(--color-light);
+}
+
 
 /* Buttons */
 .btn {
@@ -209,13 +236,15 @@ img {
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-light);
+  /* Primary CTA: light button on dark backgrounds for strong contrast */
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border: 1px solid var(--color-light-600);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-light);
-  box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.5);
+  background-color: var(--color-light-700);
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.35);
 }
 
 .btn-secondary {
@@ -225,19 +254,20 @@ img {
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-primary-light);
-  box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.5);
+  background-color: var(--surface-1);
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.18);
 }
 
 /* Keep WhatsApp button styles unchanged */
 .btn-whatsapp {
-  background-color: #25d366;
+  /* Neutralized WhatsApp button to fit the grayscale palette */
+  background-color: var(--color-dark-700);
   color: var(--color-light);
 }
 
 .btn-whatsapp:hover {
-  background-color: #128c7e;
-  box-shadow: 0px 0px 20px rgb(27 138 126);
+  background-color: var(--color-dark-800);
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.18);
 }
 
 /* Header Styles */
@@ -264,6 +294,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--space-4); /* space between logo and nav */
 }
 
 .logo a {
@@ -274,6 +305,8 @@ img {
 
 #nav ul {
   display: flex;
+  align-items: center;
+  gap: var(--space-3); /* space between nav links */
 }
 
 #nav ul li {
@@ -303,7 +336,52 @@ img {
 }
 
 .btn-portfolio{
-  
+  /* Navbar CTA style (non-fixed) */
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-light);
+  padding: 0.5rem 0.9rem;
+  border-radius: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  box-shadow: 0 8px 24px rgba(138,43,226,0.18);
+  border: 2px solid rgba(255,255,255,0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-portfolio:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+}
+
+/* Push CTA to the far right inside the nav */
+.nav-cta {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding-left: var(--space-4); /* separate from links visually */
+  border-left: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Remove left separator on small screens where items stack */
+@media (max-width: 800px) {
+  .nav-cta {
+    border-left: none;
+    padding-left: 0.6rem;
+    margin-left: 0.6rem;
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 800px) {
+  .btn-portfolio {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+    border-radius: 32px;
+  }
 }
 
 /* Hero Section */
@@ -325,7 +403,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.5));
+  background: linear-gradient(to right, rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.55));
 }
 
 .hero-content {
@@ -544,9 +622,9 @@ img {
   top: 50%;
   transform: translateY(-50%);
   text-align: center; /* Centraliza o conteúdo */
-  background-color: #1a1a1a;
+  background-color: var(--surface-1);
   border-radius: 12px;
-  color: #fff;
+  color: var(--color-light);
 }
 
 .check-icon svg {
@@ -554,6 +632,10 @@ img {
   height: 120px;
   display: block;
   margin: 0 auto 1rem auto;
+}
+
+.check-icon {
+  color: var(--color-light); /* makes SVG stroke use currentColor when SVG uses stroke="currentColor" */
 }
 
 .modal-content p {
@@ -567,8 +649,8 @@ img {
   margin-top: 1.5rem;
   padding: 1rem 2rem;
   font-size: 1.2rem;
-  background-color: #8A2BE2;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -576,7 +658,7 @@ img {
 }
 
 #closeModal:hover {
-  background-color: #6e22c0;
+  background-color: var(--color-primary-light);
 }
 
 .close-modal {
