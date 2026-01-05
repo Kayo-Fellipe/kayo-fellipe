@@ -344,6 +344,19 @@ img {
   background-color: var(--color-light);
 }
 
+/* Page-specific overrides: force navbar links white on the portfolio page only */
+.portfolio-page #nav ul li a {
+  color: var(--color-light) !important;
+}
+
+.portfolio-page #header.scrolled #nav ul li a {
+  color: var(--color-light) !important;
+}
+
+.portfolio-page .mobile-toggle span {
+  background-color: var(--color-light) !important;
+}
+
 /* Ensure CTA text remains white even when nav links change color */
 #nav ul li a.btn-portfolio,
 #nav .btn-portfolio {
