@@ -167,6 +167,15 @@ ul {
   }
 }
 
+/* Use a medium-sized background image for intermediate widths (1001px - 1450px) */
+@media (min-width: 1001px) and (max-width: 1450px) {
+  .hero {
+    background-image: url('../img/imagem_de_fundo_1450x911.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
 /* Ensure override: place a final rule with !important to avoid earlier background being applied */
 @media (max-width: 800px) {
   .hero {

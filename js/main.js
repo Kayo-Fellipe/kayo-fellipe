@@ -202,6 +202,30 @@ function debounce(func, wait) {
   };
 }
 
+// Hero background responsive swap via JS (reliable override when CSS isn't applied)
+function updateHeroBackground() {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
+
+  const mobileBreakpoint = 1000;
+  const w = window.innerWidth;
+  if (w <= mobileBreakpoint) {
+    hero.style.backgroundImage = "url('img/imagem_de_fundo_tablet_celulares.svg')";
+  } else if (w <= 1450) {
+    // intermediate breakpoint image
+    hero.style.backgroundImage = "url('img/imagem_de_fundo_1450x911.svg')";
+  } else {
+    hero.style.backgroundImage = "url('img/imagem_de_fundo_1920x1080.svg')";
+  }
+  hero.style.backgroundSize = 'cover';
+  hero.style.backgroundPosition = 'center';
+}
+
+// Apply on load/resize/orientation change
+window.addEventListener('load', updateHeroBackground);
+window.addEventListener('resize', debounce(updateHeroBackground, 120));
+window.addEventListener('orientationchange', updateHeroBackground);
+
 // Export functions for potential use in other modules
 window.PortfolioUtils = {
   debounce,
