@@ -158,6 +158,23 @@ a {
 }
 
 ul {
+/* Use a smaller background image on tablet and mobile for performance/layout */
+@media (max-width: 800px) {
+  .hero {
+    background-image: url('../img/imagem_de_fundo_tablet_celulares.svg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Ensure override: place a final rule with !important to avoid earlier background being applied */
+@media (max-width: 800px) {
+  .hero {
+    background-image: url('../img/imagem_de_fundo_tablet_celulares.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
   list-style: none;
 }
 
