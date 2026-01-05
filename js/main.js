@@ -4,6 +4,7 @@ const mobileToggle = document.getElementById('mobile-toggle');
 const nav = document.getElementById('nav');
 const navLinks = document.querySelectorAll('#nav ul li a');
 const scrollTopBtn = document.querySelector('.scroll-top');
+const logoImg = document.getElementById('logo-img');
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -89,8 +90,14 @@ function handleHeaderScroll() {
   if (header) {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
+      if (logoImg) {
+        logoImg.src = 'https://i.postimg.cc/Kzs3MFPn/4.png';
+      }
     } else {
       header.classList.remove('scrolled');
+      if (logoImg) {
+        logoImg.src = 'https://i.postimg.cc/ydNSxWZ1/3.png';
+      }
     }
   }
 }

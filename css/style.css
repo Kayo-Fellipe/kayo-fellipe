@@ -318,7 +318,7 @@ img {
   position: relative;
   transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
   display: inline-block;
-  color: var(--color-light);
+  color: var(--color-primary);
 }
 
 .mobile-toggle {
@@ -330,9 +330,48 @@ img {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: var(--color-light);
+  background-color: var(--color-primary);
   margin: 5px 0;
   transition: var(--transition);
+}
+
+/* When header is scrolled, switch navbar link colors to light for contrast */
+#header.scrolled #nav ul li a {
+  color: var(--color-light);
+}
+
+#header.scrolled .mobile-toggle span {
+  background-color: var(--color-light);
+}
+
+/* Ensure CTA text remains white even when nav links change color */
+#nav ul li a.btn-portfolio,
+#nav .btn-portfolio {
+  color: var(--color-light);
+}
+
+/* Keep CTA white on scrolled header as well */
+#header.scrolled #nav ul li a.btn-portfolio {
+  color: var(--color-light);
+}
+
+/* When header is scrolled, make the portfolio CTA a white button with black text */
+#header.scrolled .btn-portfolio {
+  background: var(--color-light);
+  color: var(--color-dark);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+#header.scrolled .btn-portfolio:hover {
+  background: var(--color-light-700);
+  color: var(--color-dark);
+  transform: translateY(-1px);
+}
+
+/* Stronger rule to ensure the CTA text becomes black when header is scrolled */
+#header.scrolled a.btn-portfolio {
+  color: var(--color-dark) !important;
+  background: var(--color-light) !important;
 }
 
 .btn-portfolio{
@@ -345,7 +384,6 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.6px;
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.066);
-  border: 2px solid rgba(255,255,255,0.06);
   transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
   display: inline-flex;
   align-items: center;
@@ -1123,6 +1161,11 @@ textarea:-webkit-autofill {
   -webkit-text-fill-color: var(--color-light) !important;
   transition: background-color 9999s ease-in-out 0s !important;
 }
+
+.fa-map-marker-alt, .fa-envelope, .fa-phone{
+  color: var(--color-light)
+}
+
 /* Footer */
 .footer {
   background-color: var(--color-dark-800);
@@ -1168,12 +1211,16 @@ textarea:-webkit-autofill {
 }
 
 .social-icon:hover {
-  background-color: var(--color-primary);
+  background-color: white;
   color: var(--color-light);
   border-color: var(--color-primary);
   transform: translateY(-5px);
-   box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.5);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.066);
 
+}
+
+.fa-instagram:hover, .fa-tiktok:hover, .fa-youtube:hover {
+  color: var(--color-primary)
 }
 
 .footer-bottom {
@@ -1207,6 +1254,12 @@ textarea:-webkit-autofill {
   visibility: hidden;
   transition: var(--transition);
   z-index: 999;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.123);
+
+}
+
+.fa-arrow-up:hover{
+  color: var(--color-primary);
 }
 
 .scroll-top.active {
@@ -1215,9 +1268,9 @@ textarea:-webkit-autofill {
 }
 
 .scroll-top:hover {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-light);
   border-color: var(--color-primary);
-  box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.5);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
   transform: translateY(-5px);
 
 }
