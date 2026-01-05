@@ -341,7 +341,7 @@ img {
 }
 
 #header.scrolled .mobile-toggle span {
-  background-color: var(--color-light);
+  background-color: var(--color-light) !important;
 }
 
 /* Page-specific overrides: force navbar links white on the portfolio page only */
@@ -431,6 +431,32 @@ img {
     padding: 0.4rem 0.7rem;
     font-size: 0.85rem;
     border-radius: 32px;
+  }
+}
+
+/* Force navbar link colors to white on small screens regardless of scroll */
+@media (max-width: 800px) {
+  #nav ul li a,
+  #nav .btn-portfolio {
+    color: var(--color-light) !important;
+  }
+
+  /* Keep CTA background visible (gradient) and text white on mobile */
+  #nav .btn-portfolio {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)) !important;
+    border: 2px solid rgba(255,255,255,0.06) !important;
+    box-shadow: 0 8px 24px rgba(255,255,255,0.03) !important;
+  }
+
+  /* Prevent scrolled-state from switching CTA to white background on mobile */
+  #header.scrolled #nav .btn-portfolio {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)) !important;
+    color: var(--color-light) !important;
+  }
+
+  /* Mobile toggle default: black (becomes white when #header.scrolled is active) */
+  .mobile-toggle span {
+    background-color: var(--color-primary) !important;
   }
 }
 

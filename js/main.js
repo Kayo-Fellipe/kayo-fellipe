@@ -75,6 +75,9 @@ function initializeScrollEffects() {
     handleActiveNavLinks();
   });
 
+  // Apply header scrolled state on load (handles pages with small scrollable area)
+  handleHeaderScroll();
+
   // Scroll to top functionality
   if (scrollTopBtn) {
     scrollTopBtn.addEventListener('click', () => {
@@ -88,7 +91,7 @@ function initializeScrollEffects() {
 
 function handleHeaderScroll() {
   if (header) {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 1) {
       header.classList.add('scrolled');
       if (logoImg) {
         logoImg.src = 'https://i.postimg.cc/Kzs3MFPn/4.png';
