@@ -161,7 +161,7 @@ ul {
 /* Use a smaller background image on tablet and mobile for performance/layout */
 @media (max-width: 800px) {
   .hero {
-    background-image: url('../img/imagem_de_fundo_tablet_celulares.svg');
+    background-image: url('https://kayo-fellipe.github.io/kayo-fellipe/img/imagem_de_fundo_tablet_celulares.svg');
     background-size: cover;
     background-position: center;
   }
@@ -170,7 +170,7 @@ ul {
 /* Use a medium-sized background image for intermediate widths (1001px - 1450px) */
 @media (min-width: 1001px) and (max-width: 1450px) {
   .hero {
-    background-image: url('../img/imagem_de_fundo_1450x911.svg') !important;
+    background-image: url('https://kayo-fellipe.github.io/kayo-fellipe/img/imagem_de_fundo_1450x911.svg') !important;
     background-size: cover !important;
     background-position: center !important;
   }
@@ -179,7 +179,7 @@ ul {
 /* Ensure override: place a final rule with !important to avoid earlier background being applied */
 @media (max-width: 800px) {
   .hero {
-    background-image: url('../img/imagem_de_fundo_tablet_celulares.svg') !important;
+    background-image: url('https://kayo-fellipe.github.io/kayo-fellipe/img/imagem_de_fundo_tablet_celulares.svg') !important;
     background-size: cover !important;
     background-position: center !important;
   }
@@ -488,7 +488,7 @@ img {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url('https://i.postimg.cc/YqtXnn4c/imagem-de-fundo-1920x1080.png');
+  background-image: url('https://kayo-fellipe.github.io/kayo-fellipe/img/imagem_de_fundo_1920x1080.svg');
   background-size: cover;
   background-position: center;
   position: relative;
