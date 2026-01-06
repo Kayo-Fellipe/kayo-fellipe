@@ -1,5 +1,91 @@
 // Portfolio Data - Define all projects and their galleries
-const portfolioData = {sessao_lucaszanette_a_kriptonita: {
+const portfolioData = {
+
+  sessao_nicolas_lays_2: {
+    title: "Nicolas & Lays",
+    type: "photography",
+    date: "2025-09-20",
+    category: "Ensaios",
+    items: [
+      {
+        type: "youtube",
+        src: "HBZWJ9cCm5g",
+        thumbnail: "https://i.postimg.cc/QCWmW8rn/DSC01853_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/k562CBFC/DSC01409_Original.jpg",
+        thumbnail: "https://i.postimg.cc/k562CBFC/DSC01409_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/B6fnGNnh/DSC01586_Original.jpg",
+        thumbnail: "https://i.postimg.cc/B6fnGNnh/DSC01586_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/DzJSh8db/DSC01567_Original.jpg",
+        thumbnail: "https://i.postimg.cc/DzJSh8db/DSC01567_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/hjVhJ658/DSC01570_Original.jpg",
+        thumbnail: "https://i.postimg.cc/hjVhJ658/DSC01570_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/wjPBw9Kn/DSC01576_Original.jpg",
+        thumbnail: "https://i.postimg.cc/wjPBw9Kn/DSC01576_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/FswtqzRT/DSC01539_Original.jpg",
+        thumbnail: "https://i.postimg.cc/FswtqzRT/DSC01539_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/SxtnHW9W/DSC01594_Original.jpg",
+        thumbnail: "https://i.postimg.cc/SxtnHW9W/DSC01594_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/43Z0k9TP/DSC01606_Original.jpg",
+        thumbnail: "https://i.postimg.cc/43Z0k9TP/DSC01606_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/TwjY2mKB/DSC01600_Original.jpg",
+        thumbnail: "https://i.postimg.cc/TwjY2mKB/DSC01600_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/RCRVj757/DSC01610_Original.jpg",
+        thumbnail: "https://i.postimg.cc/RCRVj757/DSC01610_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/GhK8x0mm/DSC01844_Original.jpg",
+        thumbnail: "https://i.postimg.cc/GhK8x0mm/DSC01844_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/J4xD5w4p/DSC01837_Original.jpg",
+        thumbnail: "https://i.postimg.cc/J4xD5w4p/DSC01837_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/YqMLF2kV/DSC01822_Original.jpg",
+        thumbnail: "https://i.postimg.cc/YqMLF2kV/DSC01822_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/yYjgyq84/DSC01646_Original.jpg",
+        thumbnail: "https://i.postimg.cc/yYjgyq84/DSC01646_Original.jpg"
+      },
+    ]
+  },
+
+  sessao_lucaszanette_a_kriptonita: {
     title: "Lucas Zanette",
     type: "photography",
     date: "2025-07-20",
@@ -38,7 +124,7 @@ const portfolioData = {sessao_lucaszanette_a_kriptonita: {
     ]
   },
 
-  sessao_nicolas_lays: {
+  sessao_nicolas_lays_1: {
     title: "Nicolas & Lays",
     type: "photography",
     date: "2025-07-05",
