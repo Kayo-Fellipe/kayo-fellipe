@@ -986,7 +986,7 @@ img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  border: 3px solid var(--color-primary);
+  border: 1px solid var(--color-light);
   overflow: hidden;
   margin-bottom: 0.2rem;
 }
@@ -1005,7 +1005,7 @@ img {
 }
 
 .testimonial-author-info p {
-  color: var(--color-primary);
+  color: var(--color-light);
   font-size: 1.0rem;
   margin-bottom: 0;
 }
@@ -1046,11 +1046,7 @@ img {
 }
 
 .testimonial-arrow:hover {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-light);
-  box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.5);
-
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.164);
 }
 
 .add-testimonial-section {
@@ -1088,7 +1084,7 @@ img {
 
 .testimonial-dot.active,
 .testimonial-dot:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-dark-600);
 }
 
 /* Mobile Responsive for Testimonials */
@@ -1368,7 +1364,6 @@ textarea:-webkit-autofill {
 
 .close-testimonial-modal:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--color-primary);
 }
 
 .modal-header {
@@ -1408,7 +1403,6 @@ textarea:-webkit-autofill {
   width: 100%;
   padding: var(--space-2);
   background-color: var(--color-dark-600);
-  border: 2px solid var(--color-dark-600);
   border-radius: var(--border-radius);
   color: var(--color-light);
   font-family: var(--font-main);
@@ -1421,8 +1415,7 @@ textarea:-webkit-autofill {
 .testimonial-modal-content .form-group select:focus,
 .testimonial-modal-content .form-group textarea:focus {
   outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.1);
+  border-color: var(--color-light);
 }
 
 .testimonial-modal-content .form-group select {
@@ -1451,8 +1444,7 @@ textarea:-webkit-autofill {
 }
 
 .file-upload-container:hover {
-  border-color: var(--color-primary);
-  background-color: rgba(138, 43, 226, 0.05);
+  border-color: var(--color-light);
 }
 
 .file-upload-container input[type="file"] {
@@ -1470,25 +1462,34 @@ textarea:-webkit-autofill {
 
 .file-upload-placeholder {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
   color: var(--color-gray);
+  padding: 10px ;
 }
 
 .file-upload-placeholder i {
-  font-size: 1.9rem;
-  color: var(--color-primary);
-  margin-bottom: var(--space-1);
+  font-size: 1rem;
+  color: var(--color-light);
+  margin: 0;
+  margin-right: var(--space-1);
 }
 
 .file-upload-placeholder span {
   font-weight: 600;
   color: var(--color-light);
+  display: inline-flex;
+  align-items: center;
 }
 
 .file-upload-placeholder small {
   font-size: 0.8rem;
   color: var(--color-gray);
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: calc(var(--space-1) / 2);
 }
 
 .photo-preview {
