@@ -266,6 +266,7 @@ img {
   background-color: var(--color-light);
   color: var(--color-dark);
   border: 1px solid var(--color-light-600);
+  padding: 15px 60px;
 }
 
 .btn-primary:hover {
@@ -287,13 +288,13 @@ img {
 /* Keep WhatsApp button styles unchanged */
 .btn-whatsapp {
   /* Neutralized WhatsApp button to fit the grayscale palette */
-  background-color: var(--color-dark-700);
-  color: var(--color-light);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .btn-whatsapp:hover {
-  background-color: var(--color-dark-800);
-  box-shadow: 0px 8px 24px rgba(0,0,0,0.18);
+  background-color: var(--color-light-700);
+  box-shadow: 0px 12px 30px rgba(255, 255, 255, 0.095);
 }
 
 /* Header Styles */
@@ -1213,7 +1214,7 @@ img {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--color-primary);
+  border-color: var(--color-light);
 }
 
 .contact-form .btn {
