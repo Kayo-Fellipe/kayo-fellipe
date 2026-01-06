@@ -210,10 +210,10 @@ function updateHeroBackground() {
   const mobileBreakpoint = 1000;
   const w = window.innerWidth;
   if (w <= mobileBreakpoint) {
-    hero.style.backgroundImage = "url('../img/imagem_de_fundo_1920x1080.svg')";
+    hero.style.backgroundImage = "url('../img/imagem_de_fundo_tablet_celulares.svg)";
   } else if (w <= 1450) {
     // intermediate breakpoint image
-    hero.style.backgroundImage = "url('../img/imagem_de_fundo_1920x1080.svg')";
+    hero.style.backgroundImage = "url('../img/imagem_de_fundo_1450x911.svg')";
   } else {
     hero.style.backgroundImage = "url('../img/imagem_de_fundo_1920x1080.svg')";
   }
