@@ -210,12 +210,12 @@ function updateHeroBackground() {
   const mobileBreakpoint = 1000;
   const w = window.innerWidth;
   if (w <= mobileBreakpoint) {
-    hero.style.backgroundImage = "url('img/imagem_de_fundo_tablet_celulares.svg')";
+    hero.style.backgroundImage = "url('https://i.postimg.cc/RZm70jT7/imagem_de_fundo_tablet_celulares.jpg')";
   } else if (w <= 1450) {
     // intermediate breakpoint image
-    hero.style.backgroundImage = "url('img/imagem_de_fundo_1450x911.svg')";
+    hero.style.backgroundImage = "url('https://i.postimg.cc/RZm70jTc/imagem_de_fundo_1450x911.jpg')";
   } else {
-    hero.style.backgroundImage = "url('img/imagem_de_fundo_1920x1080.svg')";
+    hero.style.backgroundImage = "url('https://i.postimg.cc/QdDQMRqg/imagem_de_fundo_1920x1080.jpg')";
   }
   hero.style.backgroundSize = 'cover';
   hero.style.backgroundPosition = 'center';
