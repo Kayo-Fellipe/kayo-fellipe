@@ -210,12 +210,12 @@ function updateHeroBackground() {
   const mobileBreakpoint = 1000;
   const w = window.innerWidth;
   if (w <= mobileBreakpoint) {
-    hero.style.backgroundImage = "url('https://github.com/Kayo-Fellipe/kayo-fellipe/blob/main/img/imagem_de_fundo_tablet_celulares.svg')";
+    hero.style.backgroundImage = "url('https://kayo-fellipe.github.io/kayo-fellipe/img/imagem_de_fundo_tablet_celulares.svg')";
   } else if (w <= 1450) {
     // intermediate breakpoint image
-    hero.style.backgroundImage = "url('https://github.com/Kayo-Fellipe/kayo-fellipe/blob/main/img/imagem_de_fundo_1450x911.svg')";
+    hero.style.backgroundImage = "url('https://kayo-fellipe.github.io/kayo-fellipe/img/imagem_de_fundo_1450x911.svg')";
   } else {
-    hero.style.backgroundImage = "url('https://github.com/Kayo-Fellipe/kayo-fellipe/blob/main/img/imagem_de_fundo_1920x1080.svg')";
+    hero.style.backgroundImage = "url('https://kayo-fellipe.github.io/kayo-fellipe/img/imagem_de_fundo_1920x1080.svg')";
   }
   hero.style.backgroundSize = 'cover';
   hero.style.backgroundPosition = 'center';
