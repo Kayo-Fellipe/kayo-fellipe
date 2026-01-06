@@ -215,7 +215,7 @@ function updateHeroBackground() {
     // intermediate breakpoint image
     hero.style.backgroundImage = "url('https://i.postimg.cc/RZm70jTc/imagem_de_fundo_1450x911.jpg')";
   } else {
-    hero.style.backgroundImage = "url('https://i.postimg.cc/QdDQMRqg/imagem_de_fundo_1920x1080.jpg')";
+    hero.style.backgroundImage = "url('https://i.postimg.cc/YqtXnn4c/imagem-de-fundo-1920x1080.png')";
   }
   hero.style.backgroundSize = 'cover';
   hero.style.backgroundPosition = 'center';
