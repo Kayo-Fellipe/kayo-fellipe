@@ -331,6 +331,11 @@ img {
   color: var(--color-light);
 }
 
+/* Center CTA placeholder (hidden on desktop, visible on mobile) */
+.center-cta {
+  display: none;
+}
+
 #nav ul {
   display: flex;
   align-items: center;
@@ -449,6 +454,10 @@ img {
     padding-left: 0.6rem;
     margin-left: 0.6rem;
   }
+  /* Hide the original right-side CTA on small screens to avoid duplicate */
+  .nav-cta {
+    display: none !important;
+  }
 }
 
 /* Responsive adjustments for small screens */
@@ -456,6 +465,19 @@ img {
   .btn-portfolio {
     padding: 0.4rem 0.7rem;
     font-size: 0.85rem;
+  }
+  /* show the center CTA between logo and mobile toggle */
+  .center-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .center-cta .btn-portfolio {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    border: 2px solid rgba(255,255,255,0.06);
   }
 }
 
