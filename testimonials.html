@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deixe seu depoimento sobre o trabalho de Kayo Fellipe — compartilhe sua experiência com fotografia e filmagem.">
+  <meta property="og:title" content="Deixe seu depoimento - Kayo Fellipe">
+  <meta property="og:description" content="Compartilhe sua experiência com os serviços de fotografia e filmagem. Depoimentos ajudam outros clientes a escolherem." />
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Depoimento - Kayo Fellipe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="https://i.postimg.cc/DZ1NGw6k/5.png" type="image/png">
+</head>
+<body class="testimonials-page">
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html#home">
+          <img id="logo-img" src="https://i.postimg.cc/Kzs3MFPn/4.png" alt="Kayo Fellipe Logo" style="height: 40px;">
+        </a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html#home">INÍCIO</a></li>
+          <li><a href="index.html#about">SOBRE</a></li>
+          <li><a href="index.html#testimonials" class="active">DEPOIMENTOS</a></li>
+          <li><a href="index.html#contact">CONTATO</a></li>
+        </ul>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>DEIXE SEU DEPOIMENTO</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="testimonial-page-content">
+          <p>Obrigado por dedicar um minuto para compartilhar sua experiência.</p>
+
+          <div class="testimonial-form-wrapper">
+            <form id="testimonialForm" action="https://formsubmit.co/kayofellipefer@gmail.com" method="POST" enctype="multipart/form-data">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="Novo Depoimento - Kayo Portfolio">
+              <input type="hidden" name="_next" value="/testimonials.html?testimonial=success">
+
+              <div class="form-group">
+                <label for="testimonial-name">Nome completo</label>
+                <input type="text" id="testimonial-name" name="nome" required>
+              </div>
+
+              <div class="form-group">
+                <label for="testimonial-photo">Sua foto (opcional)</label>
+                <div class="file-upload-container">
+                  <input type="file" id="testimonial-photo" name="foto" accept="image/jpeg,image/jpg,image/png,image/gif">
+                  <div class="file-upload-placeholder">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>Clique e adicione</span>
+                  </div>
+                  <img id="photo-preview" class="photo-preview hidden" alt="Preview da foto">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="testimonial-message">Seu depoimento</label>
+                <textarea id="testimonial-message" name="depoimento" rows="6" required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="testimonial-improvement">O que poderia melhorar? (opcional)</label>
+                <textarea id="testimonial-improvement" name="melhorias" rows="3"></textarea>
+              </div>
+
+              <div class="modal-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i> Enviar depoimento
+                </button>
+                <a href="index.html#testimonials" class="btn btn-secondary">Voltar</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html#home">
+            <img src="https://i.postimg.cc/Kzs3MFPn/4.png" alt="Logo" style="height: 40px;">
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/kayoofellipe/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@kayoofellipe" class="social-icon"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.youtube.com/@kayoofellipe" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kayo Fellipe. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="js/testimonial-modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

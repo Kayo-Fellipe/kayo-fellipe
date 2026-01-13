@@ -21,7 +21,26 @@ button {
   padding: 0.5rem;
 }
 
-/* Para remover o fundo azul de seleção (padrão do sistema) */
+/* DEPRECATED: selectors archived — these rules are not referenced by HTML/JS
+   Keep here for review or restore if needed. Remove to shrink CSS in production.
+
+   #sort-select option
+   .sort-select:focus
+   .portfolio-stats
+   .portfolio-stats i
+   .stats-count
+
+*/
+
+/* archived: start */
+/*
+#sort-select option {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 10px; /* Alguns navegadores ignoram isso */
+  padding: 0.5rem;
+}
+
 .sort-select:focus {
   outline: none;
   border-color: rebeccapurple;
@@ -52,6 +71,8 @@ button {
   font-weight: 700;
   text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
 }
+*/
+/* archived: end */
 
 /* Modern Grid Layout */
 .portfolio-grid {
@@ -496,6 +517,7 @@ button {
     gap: var(--space-3);
   }
   
+  /* archived: portfolio-controls & filter groups - not used by current HTML/JS
   .portfolio-controls {
     padding: var(--space-4);
     gap: var(--space-4);
@@ -515,6 +537,7 @@ button {
     margin: 0 auto;
     justify-content: center;
   }
+  */
 }
 
 
@@ -525,6 +548,7 @@ button {
     gap: var(--space-3);
   }
 
+  /* archived: portfolio-controls and filter UI for smaller screens
   .portfolio-controls {
     padding: var(--space-3);
     gap: var(--space-3);
@@ -577,6 +601,7 @@ button {
     font-size: 0.9rem;
     text-align: center;
   }
+  */
 
   .modal-content {
     width: 100%;
@@ -659,6 +684,7 @@ button {
 }
 
 @media (max-width: 480px) {
+  /* archived: small-screen filter UI
   .portfolio-controls {
     padding: var(--space-2);
     gap: var(--space-2);
@@ -698,6 +724,7 @@ button {
   .portfolio-stats span {
     display: inline-block;
   }
+  */
 
   .gallery-container {
     height: 100vh;

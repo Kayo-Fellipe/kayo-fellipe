@@ -1,3 +1,9 @@
+/* Media Queries */
+@media (max-width: 768px) {
+  .mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+}
 body, html {
   margin: 0;
   padding: 0;
@@ -229,25 +235,7 @@ img {
   margin: 0 auto;
 }
 
-/* Cases / Projects section: light background to highlight work */
-.cases-section {
-  background-color: var(--color-light);
-  color: var(--color-dark);
-}
-
-.cases-section .section-header h2,
-.cases-section p,
-.cases-section .section-line {
-  color: var(--color-dark);
-}
-
-/* Buttons on light backgrounds: dark button */
-.cases-section .btn-primary {
-  background-color: var(--color-dark-700);
-  color: var(--color-light);
-}
-
-
+/* Cases / Projects section removed: not used in current HTML */
 /* Buttons */
 .btn {
   display: inline-block;
@@ -390,6 +378,171 @@ img {
   background-color: var(--color-light) !important;
 }
 
+/* Force navbar links and logo to white on the testimonials page */
+.testimonials-page #nav ul li a {
+  color: var(--color-light) !important;
+}
+
+.testimonials-page #header.scrolled #nav ul li a {
+  color: var(--color-light) !important;
+}
+
+.testimonials-page .mobile-toggle span {
+  background-color: var(--color-light) !important;
+}
+
+.testimonials-page #logo-img {
+  filter: brightness(0) invert(1);
+}
+
+/* Testimonials page: narrow & centered form, centered intro paragraph, equal input heights */
+.testimonials-page .testimonial-page-content p {
+  max-width: 560px; /* keep narrow on desktop */
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.testimonials-page .testimonial-form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-4) 0;
+}
+
+.testimonials-page .testimonial-form-wrapper form {
+  width: 100%;
+  max-width: 680px; /* reduced width */
+  box-sizing: border-box;
+}
+
+/* Make Nome and "O que poderia melhorar?" same visual height */
+.testimonials-page #testimonial-name,
+.testimonials-page #testimonial-improvement {
+  box-sizing: border-box;
+  height: 56px;
+  padding: 0.6rem 0.9rem;
+}
+
+/* Let the improvement textarea expand vertically if user wants, but start with same height */
+.testimonials-page #testimonial-improvement {
+  resize: vertical;
+  min-height: 56px;
+}
+
+/* Make file upload input visually match other fields */
+.testimonials-page .file-upload-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.testimonials-page .file-upload-container input[type="file"] {
+  height: 56px;
+  padding: 0.4rem 0.75rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 260px;
+}
+
+.testimonials-page .file-upload-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 56px;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+}
+
+.testimonials-page .photo-preview {
+  max-height: 56px;
+  width: auto;
+  border-radius: 6px;
+}
+
+/* Responsive adjustments for testimonials page */
+@media (max-width: 992px) {
+  .testimonials-page .testimonial-form-wrapper form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .testimonials-page #testimonial-name,
+  .testimonials-page #testimonial-improvement {
+    height: 48px;
+  }
+
+  .testimonials-page .file-upload-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .testimonials-page .file-upload-container input[type="file"] {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-page .testimonial-page-content p {
+    max-width: 320px; /* keep the intro narrow on small screens */
+    font-size: 0.95rem;
+  }
+
+  .testimonials-page .testimonial-form-wrapper form {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .testimonials-page .file-upload-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .testimonials-page .file-upload-container input[type="file"] {
+    width: 100%;
+    max-width: none;
+  }
+
+  .testimonials-page .file-upload-placeholder {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .testimonials-page .photo-preview {
+    max-height: 48px;
+    align-self: center;
+  }
+
+  .testimonials-page #testimonial-name,
+  .testimonials-page #testimonial-improvement {
+    width: 100%;
+  }
+}
+
+/* Ensure form controls are full-width inside the testimonial form */
+.testimonials-page .testimonial-form-wrapper form .form-group input,
+.testimonials-page .testimonial-form-wrapper form .form-group textarea {
+  width: 100%;
+}
+
+/* Make file upload and placeholder share available space */
+.testimonials-page .file-upload-container input[type="file"] {
+  flex: 0 0 auto;
+}
+.testimonials-page .file-upload-placeholder { flex: 1 1 auto; }
+
+@media (max-width: 768px) {
+  .testimonials-page .testimonial-form-wrapper form {
+    padding: 0 1rem;
+    max-width: 92%;
+  }
+  .testimonials-page .testimonial-page-content p { font-size: 0.98rem; }
+}
+
 /* Ensure CTA text remains white even when nav links change color */
 #nav ul li a.btn-portfolio,
 #nav .btn-portfolio {
@@ -436,6 +589,22 @@ img {
 
 .btn-portfolio:hover {
   transform: translateY(-1px);
+}
+
+/* Responsive images: container controls max-width; image is fluid and centered */
+.about-image { display: flex; justify-content: center; }
+.image-container { width: 100%; max-width: 500px; margin: 0 auto; border-radius: var(--border-radius); overflow: hidden; }
+.image-container img,
+.about-image .image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .image-container { max-width: 100%; }
 }
 
 /* Push CTA to the far right inside the nav */
@@ -621,29 +790,8 @@ img {
 }
 
 /* Portfolio Section */
-.portfolio-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--space-4);
-}
 
-.filter-btn {
-  background-color: transparent;
-  border: none;
-  color: var(--color-light);
-  padding: var(--space-2) var(--space-3);
-  margin: 0 var(--space-1);
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: var(--transition);
-  border-radius: var(--border-radius);
-}
-
-.filter-btn.active, .filter-btn:hover {
-  color: var(--color-light);
-  background-color: var(--color-primary);
-}
+/* Portfolio filtering controls removed (no filter UI present) */
 
 .portfolio-grid {
   display: grid;
@@ -813,158 +961,9 @@ img {
   border: none;
 }
 
-/* Documentary Section */
-.documentary {
-  background-color: var(--color-dark-800);
-}
+/* Documentary section styles removed (section commented out in HTML) */
 
-.documentary-content {
-  display: flex;
-  gap: var(--space-6);
-  align-items: center;
-}
-
-.documentary-video {
-  flex: 1.2;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  background-color: var(--color-dark-700);
-  border: 2px solid transparent;
-  transition: var(--transition);
-  display: block;
-  visibility: visible;
-  opacity: 1;
-}
-
-.video-container:hover {
-  border-color: var(--color-primary);
-  transform: translateY(-5px);
-  box-shadow: 0 25px 50px rgba(138, 43, 226, 0.2);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 14px;
-  display: block;
-  visibility: visible;
-  opacity: 1;
-}
-
-.documentary-description {
-  flex: 1;
-  padding-left: var(--space-4);
-}
-
-.documentary-description h3 {
-  font-size: 2rem;
-  color: var(--color-light);
-  margin-bottom: var(--space-3);
-  position: relative;
-}
-
-.documentary-description h3::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
-  border-radius: 2px;
-}
-
-.documentary-description p {
-  color: var(--color-light);
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: var(--space-3);
-  text-align: justify;
-}
-
-.documentary-description p:last-child {
-  margin-bottom: 0;
-}
-
-/* Services Section */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-4);
-}
-
-.service-card {
-  background-color: var(--color-dark-700);
-  border-radius: var(--border-radius);
-  padding: var(--space-4);
-  transition: var(--transition);
-  position: relative;
-  overflow: hidden;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 100%;
-  background-color: var(--color-primary);
-}
-
-.service-icon {
-  font-size: 2.5rem;
-  color: var(--color-primary);
-  margin-bottom: var(--space-3);
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: var(--space-2);
-  color: var(--color-light);
-}
-
-.service-card p {
-  color: var(--color-light);
-  margin-bottom: var(--space-3);
-  text-align: justify;
-}
-
-.service-features {
-  list-style: none;
-}
-
-.service-features li {
-  position: relative;
-  padding-left: 20px; /* Espaço para o ícone */
-  color: var(--color-light);
-}
-
-.service-features li::before {
-  content: '→';
-  color: var(--color-primary);
-  position: absolute;
-  left: 0;
-  top: 0; /* Ajuste vertical se necessário */
-  font-size: 1rem;
-}
+/* Services section styles removed (not used in current markup) */
 
 /* Testimonials Section - New Design */
 .testimonials-section {
