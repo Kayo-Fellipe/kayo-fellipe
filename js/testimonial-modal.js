@@ -1,0 +1,367 @@
+// Testimonial Modal Functionality
+
+// DOM Elements
+const addTestimonialBtn = document.getElementById('addTestimonialBtn');
+const testimonialModal = document.getElementById('testimonial-modal');
+const closeTestimonialModal = document.getElementById('closeTestimonialModal');
+const cancelTestimonial = document.getElementById('cancelTestimonial');
+const testimonialForm = document.getElementById('testimonialForm');
+const photoInput = document.getElementById('testimonial-photo');
+const photoPreview = document.getElementById('photo-preview');
+const fileUploadPlaceholder = document.querySelector('.file-upload-placeholder');
+
+// Form inputs
+const testimonialNameInput = document.getElementById('testimonial-name');
+const testimonialMessageInput = document.getElementById('testimonial-message');
+const testimonialImprovementInput = document.getElementById('testimonial-improvement');
+
+// Open modal
+addTestimonialBtn.addEventListener('click', () => {
+  testimonialModal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+});
+
+// Close modal functions
+function closeModal() {
+  testimonialModal.classList.add('hidden');
+  document.body.style.overflow = 'auto';
+  resetForm();
+}
+
+closeTestimonialModal.addEventListener('click', closeModal);
+cancelTestimonial.addEventListener('click', closeModal);
+
+// Close modal when clicking outside
+testimonialModal.addEventListener('click', (e) => {
+  if (e.target === testimonialModal) {
+    closeModal();
+  }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !testimonialModal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
+
+// Photo upload functionality
+photoInput.addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  
+  if (file) {
+    // Validate file type
+    if (!file.type.startsWith('image/')) {
+      showError(photoInput, 'Por favor, selecione apenas arquivos de imagem');
+      photoInput.value = '';
+      return;
+    }
+    
+    // Validate file size (max 5MB)
+    if (file.size > 5 * 1024 * 1024) {
+      showError(photoInput, 'A imagem deve ter no máximo 5MB');
+      photoInput.value = '';
+      return;
+    }
+    
+    // Show preview
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      photoPreview.src = e.target.result;
+      photoPreview.classList.remove('hidden');
+      fileUploadPlaceholder.style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+  } else {
+    // Reset preview
+    photoPreview.classList.add('hidden');
+    fileUploadPlaceholder.style.display = 'flex';
+  }
+});
+
+// Form submission
+testimonialForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  if (!validateTestimonialForm()) {
+    return;
+  }
+  
+  const submitBtn = testimonialForm.querySelector('button[type="submit"]');
+  const originalText = submitBtn.innerHTML;
+  
+  // Show loading state
+  submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+  submitBtn.disabled = true;
+  
+  // Create FormData for file upload
+  const formData = new FormData();
+  
+  // Add all form fields to FormData
+  formData.append('nome', testimonialNameInput.value.trim());
+  formData.append('depoimento', testimonialMessageInput.value.trim());
+  formData.append('melhorias', testimonialImprovementInput.value.trim());
+  
+  // Add photo if selected
+  if (photoInput.files[0]) {
+    formData.append('foto', photoInput.files[0]);
+  }
+  
+  // Add FormSubmit configuration
+  formData.append('_captcha', 'false');
+  formData.append('_subject', 'Novo Depoimento - Kayo Portfolio');
+  formData.append('_next', window.location.href + '?testimonial=success');
+  
+  // Submit form using fetch with proper FormData handling
+  fetch('https://formsubmit.co/kayofellipefer@gmail.com', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      showSuccessMessage();
+      resetForm();
+      closeModal();
+    } else {
+      throw new Error('Erro no envio');
+    }
+  })
+  .catch(error => {
+    console.error('Erro ao enviar:', error);
+    showErrorMessage();
+  })
+  .finally(() => {
+    // Reset button
+    submitBtn.innerHTML = originalText;
+    submitBtn.disabled = false;
+  });
+});
+
+// Form validation
+function validateTestimonialForm() {
+  let isValid = true;
+  removeTestimonialErrors();
+  
+  // Validate name
+  if (testimonialNameInput.value.trim() === '') {
+    showError(testimonialNameInput, 'Por favor, insira seu nome');
+    isValid = false;
+  } else if (testimonialNameInput.value.trim().length < 2) {
+    showError(testimonialNameInput, 'O nome deve ter pelo menos 2 caracteres');
+    isValid = false;
+  }
+  
+  // Validate testimonial message
+  if (testimonialMessageInput.value.trim() === '') {
+    showError(testimonialMessageInput, 'Por favor, escreva seu depoimento');
+    isValid = false;
+  } else if (testimonialMessageInput.value.trim().length < 20) {
+    showError(testimonialMessageInput, 'O depoimento deve ter pelo menos 20 caracteres');
+    isValid = false;
+  }
+  
+  // Validate photo if provided
+  if (photoInput.files[0]) {
+    const file = photoInput.files[0];
+    if (!file.type.startsWith('image/')) {
+      showError(photoInput, 'Por favor, selecione apenas arquivos de imagem');
+      isValid = false;
+    } else if (file.size > 5 * 1024 * 1024) {
+      showError(photoInput, 'A imagem deve ter no máximo 5MB');
+      isValid = false;
+    }
+  }
+  
+  return isValid;
+}
+
+// Show error message
+function showError(input, message) {
+  const formGroup = input.parentElement;
+  
+  // Remove existing error message
+  const existingError = formGroup.querySelector('.error-message');
+  if (existingError) {
+    existingError.remove();
+  }
+  
+  // Create error message element
+  const errorMessage = document.createElement('p');
+  errorMessage.className = 'error-message';
+  errorMessage.textContent = message;
+  
+  // Add error class to input
+  input.classList.add('error-input');
+  
+  // Add error message to form group
+  formGroup.appendChild(errorMessage);
+}
+
+// Remove all error messages
+function removeTestimonialErrors() {
+  // Remove error messages
+  const errorMessages = testimonialForm.querySelectorAll('.error-message');
+  errorMessages.forEach(error => error.remove());
+  
+  // Remove error class from inputs
+  const inputs = [testimonialNameInput, testimonialMessageInput, photoInput];
+  inputs.forEach(input => {
+    input.classList.remove('error-input');
+  });
+}
+
+// Reset form
+function resetForm() {
+  testimonialForm.reset();
+  photoPreview.classList.add('hidden');
+  photoPreview.src = '';
+  fileUploadPlaceholder.style.display = 'flex';
+  removeTestimonialErrors();
+}
+
+// Show success message
+function showSuccessMessage() {
+  // Create success notification
+  const notification = document.createElement('div');
+  notification.className = 'success-notification';
+  notification.innerHTML = `
+    <div class="notification-content">
+      <i class="fas fa-check-circle"></i>
+      <span>Depoimento enviado com sucesso! Obrigado pelo seu feedback.</span>
+    </div>
+  `;
+  
+  // Add styles
+  const style = document.createElement('style');
+  style.textContent = `
+    .success-notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: var(--color-success);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 100000;
+      animation: slideInRight 0.3s ease;
+      max-width: 350px;
+    }
+    
+    .notification-content {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .notification-content i {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  `;
+  
+  document.head.appendChild(style);
+  document.body.appendChild(notification);
+  
+  // Remove notification after 5 seconds
+  setTimeout(() => {
+    notification.remove();
+    style.remove();
+  }, 5000);
+}
+
+// Show error message
+function showErrorMessage() {
+  // Create error notification
+  const notification = document.createElement('div');
+  notification.className = 'error-notification';
+  notification.innerHTML = `
+    <div class="notification-content">
+      <i class="fas fa-exclamation-circle"></i>
+      <span>Erro ao enviar depoimento. Tente novamente.</span>
+    </div>
+  `;
+  
+  // Add styles
+  const style = document.createElement('style');
+  style.textContent = `
+    .error-notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: var(--color-error);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 100000;
+      animation: slideInRight 0.3s ease;
+      max-width: 350px;
+    }
+    
+    .notification-content {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .notification-content i {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+  `;
+  
+  document.head.appendChild(style);
+  document.body.appendChild(notification);
+  
+  // Remove notification after 5 seconds
+  setTimeout(() => {
+    notification.remove();
+    style.remove();
+  }, 5000);
+}
+
+// Add input event listeners to clear errors on typing
+const testimonialInputs = [testimonialNameInput, testimonialMessageInput];
+testimonialInputs.forEach(input => {
+  input.addEventListener('input', () => {
+    // Remove error class
+    input.classList.remove('error-input');
+    
+    // Remove error message if exists
+    const errorMessage = input.parentElement.querySelector('.error-message');
+    if (errorMessage) {
+      errorMessage.remove();
+    }
+  });
+});
+
+// Handle photo input error clearing
+photoInput.addEventListener('change', () => {
+  photoInput.classList.remove('error-input');
+  const errorMessage = photoInput.parentElement.querySelector('.error-message');
+  if (errorMessage) {
+    errorMessage.remove();
+  }
+});
+
+// Check for success parameter in URL
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('testimonial') === 'success') {
+    showSuccessMessage();
+    // Clean URL
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+});
