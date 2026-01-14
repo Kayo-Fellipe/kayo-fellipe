@@ -59,6 +59,9 @@ if (photoInput) {
         photoPreview.classList.add('hidden');
       }
       if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'flex';
+      // remove displayed filename if present
+      const existingName = document.querySelector('.file-upload-container .file-name');
+      if (existingName) existingName.remove();
       return;
     }
 
@@ -81,8 +84,33 @@ if (photoInput) {
         photoPreview.classList.remove('hidden');
       }
       if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'none';
+      // show selected filename next to the upload control
+      try {
+        const container = fileUploadPlaceholder ? fileUploadPlaceholder.parentElement : null;
+        if (container) {
+          let nameEl = container.querySelector('.file-name');
+          if (!nameEl) {
+            nameEl = document.createElement('span');
+            nameEl.className = 'file-name';
+            container.appendChild(nameEl);
+          }
+          nameEl.textContent = file.name;
+        }
+      } catch (e) {
+        // ignore non-critical UI update errors
+      }
     };
     reader.readAsDataURL(file);
+  });
+}
+
+// Make the placeholder / container clickable to open the file picker
+const fileUploadContainer = document.querySelector('.file-upload-container');
+if (fileUploadContainer && photoInput) {
+  // clicking the placeholder or anywhere in the container (except the input itself) should open the picker
+  fileUploadContainer.addEventListener('click', (e) => {
+    if (e.target === photoInput) return; // let native input handle it
+    try { photoInput.click(); } catch (err) { /* ignore */ }
   });
 }
 
@@ -210,6 +238,8 @@ function resetForm() {
     photoPreview.src = '';
   }
   if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'flex';
+  const existingName = document.querySelector('.file-upload-container .file-name');
+  if (existingName) existingName.remove();
   removeTestimonialErrors();
 }
 
