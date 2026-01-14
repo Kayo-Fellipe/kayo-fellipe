@@ -503,21 +503,22 @@ class Portfolio {
     const closeBtn = document.getElementById('close-modal');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
+    if (closeBtn) closeBtn.addEventListener('click', () => this.closeGallery());
+    if (prevBtn) prevBtn.addEventListener('click', () => this.previousItem());
+    if (nextBtn) nextBtn.addEventListener('click', () => this.nextItem());
 
-    closeBtn.addEventListener('click', () => this.closeGallery());
-    prevBtn.addEventListener('click', () => this.previousItem());
-    nextBtn.addEventListener('click', () => this.nextItem());
+    // Close modal when clicking outside (only if modal exists)
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          this.closeGallery();
+        }
+      });
+    }
 
-    // Close modal when clicking outside
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        this.closeGallery();
-      }
-    });
-
-    // Keyboard navigation
+    // Keyboard navigation (check modal exists before using it)
     document.addEventListener('keydown', (e) => {
-      if (modal.classList.contains('active')) {
+      if (modal && modal.classList && modal.classList.contains('active')) {
         switch(e.key) {
           case 'Escape':
             this.closeGallery();
@@ -538,6 +539,7 @@ class Portfolio {
 
   setupTouchNavigation() {
     const galleryMain = document.getElementById('gallery-main');
+    if (!galleryMain) return; // nothing to setup on pages without the gallery
     let touchStartX = 0;
     let touchEndX = 0;
     let touchStartY = 0;
@@ -793,6 +795,7 @@ class Portfolio {
 
   generateThumbnails() {
     const thumbnailsContainer = document.getElementById('gallery-thumbnails');
+    if (!thumbnailsContainer) return;
     thumbnailsContainer.innerHTML = '';
 
     this.currentProject.items.forEach((item, index) => {
@@ -838,9 +841,8 @@ class Portfolio {
     const nextBtn = document.getElementById('next-btn');
 
     if (!this.currentProject) return;
-
-    prevBtn.disabled = this.currentIndex <= 0;
-    nextBtn.disabled = this.currentIndex >= this.currentProject.items.length - 1;
+    if (prevBtn) prevBtn.disabled = this.currentIndex <= 0;
+    if (nextBtn) nextBtn.disabled = this.currentIndex >= this.currentProject.items.length - 1;
   }
 }
 
@@ -851,7 +853,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     const indicator = document.querySelector('.swipe-indicator');
-    setTimeout(() => {
-      indicator.style.display = 'none';
-    }, 5000); // 5 segundos
+    if (indicator) {
+      setTimeout(() => {
+        indicator.style.display = 'none';
+      }, 5000); // 5 segundos
+    }
 });

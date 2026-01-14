@@ -7,7 +7,7 @@ const closeTestimonialModal = document.getElementById('closeTestimonialModal');
 const cancelTestimonial = document.getElementById('cancelTestimonial');
 const testimonialForm = document.getElementById('testimonialForm');
 const photoInput = document.getElementById('testimonial-photo');
-let photoPreview = document.getElementById('photo-preview');
+const photoPreview = document.getElementById('photo-preview');
 const fileUploadPlaceholder = document.querySelector('.file-upload-placeholder');
 // track created object URL so we can revoke it on reset
 let currentObjectURL = null;
@@ -54,26 +54,23 @@ document.addEventListener('keydown', (e) => {
 
 // Photo upload functionality (only attach if elements exist)
 if (photoInput) {
-  console.log('testimonial-modal loaded — elements:', {
-    photoInput: !!photoInput,
-    photoPreview: !!photoPreview,
-    fileUploadPlaceholder: !!fileUploadPlaceholder
-  });
-  photoInput.addEventListener('change', function(e) {
-    console.log('testimonial-photo change event');
-    const file = e.target.files[0];
-    console.log('selected file:', file);
+  const placeholder = fileUploadPlaceholder;
+  photoInput.addEventListener('change', function () {
+    const file = this.files[0];
     if (!file) {
       if (photoPreview) {
         photoPreview.classList.add('hidden');
+        photoPreview.src = '';
+        photoPreview.style.display = 'none';
       }
-      if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'flex';
-      // remove displayed filename if present
+      if (placeholder) placeholder.style.display = 'flex';
       const existingName = document.querySelector('.file-upload-container .file-name');
       if (existingName) existingName.remove();
+      try { if (currentObjectURL) { URL.revokeObjectURL(currentObjectURL); currentObjectURL = null; } } catch (e) {}
       return;
     }
 
+    // Garante que é uma imagem
     if (!file.type.startsWith('image/')) {
       showError(photoInput, 'Por favor, selecione apenas arquivos de imagem');
       photoInput.value = '';
@@ -86,38 +83,17 @@ if (photoInput) {
       return;
     }
 
-    // Prefer createObjectURL for performance and reliability; fallback to FileReader
-    try {
-      if (window.URL && URL.createObjectURL) {
-        if (currentObjectURL) URL.revokeObjectURL(currentObjectURL);
-        currentObjectURL = URL.createObjectURL(file);
-        if (photoPreview) {
-          console.log('setting preview src to objectURL');
-          photoPreview.src = currentObjectURL;
-          photoPreview.classList.remove('hidden');
-          photoPreview.style.display = 'inline-block';
-        } else {
-          console.warn('photoPreview element not found');
-        }
-        if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'none';
-      } else {
-        const reader = new FileReader();
-        reader.onload = function(ev) {
-          if (photoPreview) {
-            console.log('setting preview src from FileReader');
-            photoPreview.src = ev.target.result;
-            photoPreview.classList.remove('hidden');
-            photoPreview.style.display = 'inline-block';
-          } else {
-            console.warn('photoPreview element not found (FileReader)');
-          }
-          if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'none';
-        };
-        reader.readAsDataURL(file);
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      if (photoPreview) {
+        photoPreview.src = e.target.result;
+        photoPreview.classList.remove('hidden');
+        photoPreview.style.display = 'inline-block';
+        photoPreview.style.maxHeight = '56px';
       }
+      if (placeholder) placeholder.style.display = 'none';
 
-      // show selected filename next to the upload control
-      const container = fileUploadPlaceholder ? fileUploadPlaceholder.parentElement : null;
+      const container = placeholder ? placeholder.parentElement : null;
       if (container) {
         let nameEl = container.querySelector('.file-name');
         if (!nameEl) {
@@ -127,29 +103,14 @@ if (photoInput) {
         }
         nameEl.textContent = file.name;
       }
-    } catch (err) {
-      console.error('Erro ao gerar preview da imagem:', err);
-    }
+    };
+    reader.readAsDataURL(file);
   });
 }
 
 // Make the placeholder / container clickable to open the file picker
 const fileUploadContainer = document.querySelector('.file-upload-container');
 if (fileUploadContainer && photoInput) {
-  // ensure there is a photoPreview element; create if missing
-  if (!photoPreview) {
-    try {
-      const img = document.createElement('img');
-      img.id = 'photo-preview';
-      img.className = 'photo-preview hidden';
-      img.alt = 'Preview da foto';
-      fileUploadContainer.appendChild(img);
-      photoPreview = document.getElementById('photo-preview');
-      console.log('photoPreview element created dynamically');
-    } catch (e) {
-      console.warn('could not create photoPreview element', e);
-    }
-  }
   // clicking the placeholder or anywhere in the container (except the input itself) should open the picker
   fileUploadContainer.addEventListener('click', (e) => {
     if (e.target === photoInput) return; // let native input handle it
@@ -159,52 +120,21 @@ if (fileUploadContainer && photoInput) {
 
 // Form submission and validation (only if form exists)
 if (testimonialForm) {
+  // Only validate here; allow the browser to submit the form natively
   testimonialForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    if (!validateTestimonialForm()) return;
-
-    const submitBtn = testimonialForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn ? submitBtn.innerHTML : '';
-    if (submitBtn) {
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-      submitBtn.disabled = true;
+    if (!validateTestimonialForm()) {
+      e.preventDefault();
+      return;
     }
 
-    const formData = new FormData();
-    if (testimonialNameInput) formData.append('nome', testimonialNameInput.value.trim());
-    if (testimonialMessageInput) formData.append('depoimento', testimonialMessageInput.value.trim());
-    if (testimonialImprovementInput) formData.append('melhorias', testimonialImprovementInput.value.trim());
-    if (photoInput && photoInput.files[0]) formData.append('foto', photoInput.files[0]);
-
-    formData.append('_captcha', 'false');
-    formData.append('_subject', 'Novo Depoimento - Kayo Portfolio');
-    formData.append('_next', (window.location.origin + window.location.pathname).replace(/\/testimonials\.html$/, '/testimonials.html') + '?testimonial=success');
-
-    fetch('https://formsubmit.co/kayofellipefer@gmail.com', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => {
-      if (response.ok) {
-        showSuccessMessage();
-        resetForm();
-        // If modal was used, close it, else keep on page
-        closeModal();
-      } else {
-        throw new Error('Erro no envio');
-      }
-    })
-    .catch(error => {
-      console.error('Erro ao enviar:', error);
-      showErrorMessage();
-    })
-    .finally(() => {
-      if (submitBtn) {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-      }
-    });
+    // let the browser do the multipart POST to FormSubmit (native form action in HTML)
+    // show a disabled state briefly to indicate progress
+    const submitBtn = testimonialForm.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      // optionally change text; restore when page navigates back via _next
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+    }
   });
 }
 

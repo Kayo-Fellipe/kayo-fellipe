@@ -465,13 +465,18 @@ img {
 }
 
 .testimonials-page .file-name {
-  color: var(--color-light);
+  color: #062b06;
+  background: #9be29b;
   font-size: 0.95rem;
   max-width: 220px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   align-self: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-left: 0.5rem;
+  display: inline-block;
 }
 
 /* Responsive adjustments for testimonials page */
