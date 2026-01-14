@@ -455,23 +455,12 @@ img {
   box-sizing: border-box;
   flex: 1;
   text-align: center;
-  cursor: pointer;
 }
 
 .testimonials-page .photo-preview {
   max-height: 56px;
   width: auto;
   border-radius: 6px;
-}
-
-.testimonials-page .file-name {
-  color: var(--color-light);
-  font-size: 0.95rem;
-  max-width: 220px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  align-self: center;
 }
 
 /* Responsive adjustments for testimonials page */

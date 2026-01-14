@@ -7,10 +7,8 @@ const closeTestimonialModal = document.getElementById('closeTestimonialModal');
 const cancelTestimonial = document.getElementById('cancelTestimonial');
 const testimonialForm = document.getElementById('testimonialForm');
 const photoInput = document.getElementById('testimonial-photo');
-let photoPreview = document.getElementById('photo-preview');
+const photoPreview = document.getElementById('photo-preview');
 const fileUploadPlaceholder = document.querySelector('.file-upload-placeholder');
-// track created object URL so we can revoke it on reset
-let currentObjectURL = null;
 
 // Form inputs (may be null if form is not present)
 const testimonialNameInput = document.getElementById('testimonial-name');
@@ -54,23 +52,13 @@ document.addEventListener('keydown', (e) => {
 
 // Photo upload functionality (only attach if elements exist)
 if (photoInput) {
-  console.log('testimonial-modal loaded — elements:', {
-    photoInput: !!photoInput,
-    photoPreview: !!photoPreview,
-    fileUploadPlaceholder: !!fileUploadPlaceholder
-  });
   photoInput.addEventListener('change', function(e) {
-    console.log('testimonial-photo change event');
     const file = e.target.files[0];
-    console.log('selected file:', file);
     if (!file) {
       if (photoPreview) {
         photoPreview.classList.add('hidden');
       }
       if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'flex';
-      // remove displayed filename if present
-      const existingName = document.querySelector('.file-upload-container .file-name');
-      if (existingName) existingName.remove();
       return;
     }
 
@@ -86,74 +74,15 @@ if (photoInput) {
       return;
     }
 
-    // Prefer createObjectURL for performance and reliability; fallback to FileReader
-    try {
-      if (window.URL && URL.createObjectURL) {
-        if (currentObjectURL) URL.revokeObjectURL(currentObjectURL);
-        currentObjectURL = URL.createObjectURL(file);
-        if (photoPreview) {
-          console.log('setting preview src to objectURL');
-          photoPreview.src = currentObjectURL;
-          photoPreview.classList.remove('hidden');
-          photoPreview.style.display = 'inline-block';
-        } else {
-          console.warn('photoPreview element not found');
-        }
-        if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'none';
-      } else {
-        const reader = new FileReader();
-        reader.onload = function(ev) {
-          if (photoPreview) {
-            console.log('setting preview src from FileReader');
-            photoPreview.src = ev.target.result;
-            photoPreview.classList.remove('hidden');
-            photoPreview.style.display = 'inline-block';
-          } else {
-            console.warn('photoPreview element not found (FileReader)');
-          }
-          if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'none';
-        };
-        reader.readAsDataURL(file);
+    const reader = new FileReader();
+    reader.onload = function(ev) {
+      if (photoPreview) {
+        photoPreview.src = ev.target.result;
+        photoPreview.classList.remove('hidden');
       }
-
-      // show selected filename next to the upload control
-      const container = fileUploadPlaceholder ? fileUploadPlaceholder.parentElement : null;
-      if (container) {
-        let nameEl = container.querySelector('.file-name');
-        if (!nameEl) {
-          nameEl = document.createElement('span');
-          nameEl.className = 'file-name';
-          container.appendChild(nameEl);
-        }
-        nameEl.textContent = file.name;
-      }
-    } catch (err) {
-      console.error('Erro ao gerar preview da imagem:', err);
-    }
-  });
-}
-
-// Make the placeholder / container clickable to open the file picker
-const fileUploadContainer = document.querySelector('.file-upload-container');
-if (fileUploadContainer && photoInput) {
-  // ensure there is a photoPreview element; create if missing
-  if (!photoPreview) {
-    try {
-      const img = document.createElement('img');
-      img.id = 'photo-preview';
-      img.className = 'photo-preview hidden';
-      img.alt = 'Preview da foto';
-      fileUploadContainer.appendChild(img);
-      photoPreview = document.getElementById('photo-preview');
-      console.log('photoPreview element created dynamically');
-    } catch (e) {
-      console.warn('could not create photoPreview element', e);
-    }
-  }
-  // clicking the placeholder or anywhere in the container (except the input itself) should open the picker
-  fileUploadContainer.addEventListener('click', (e) => {
-    if (e.target === photoInput) return; // let native input handle it
-    try { photoInput.click(); } catch (err) { /* ignore */ }
+      if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'none';
+    };
+    reader.readAsDataURL(file);
   });
 }
 
@@ -281,15 +210,6 @@ function resetForm() {
     photoPreview.src = '';
   }
   if (fileUploadPlaceholder) fileUploadPlaceholder.style.display = 'flex';
-  const existingName = document.querySelector('.file-upload-container .file-name');
-  if (existingName) existingName.remove();
-  // revoke any created object URL to free memory
-  try {
-    if (currentObjectURL) {
-      URL.revokeObjectURL(currentObjectURL);
-      currentObjectURL = null;
-    }
-  } catch (e) { /* ignore */ }
   removeTestimonialErrors();
 }
 
