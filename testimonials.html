@@ -49,76 +49,44 @@
           <p>Obrigado por dedicar um minuto para compartilhar sua experiência.</p>
 
           <div class="testimonial-form-wrapper">
-            <form id="testimonialForm"
-                  action="https://formsubmit.co/kayofellipefer@gmail.com"
-                  method="POST"
-                  enctype="multipart/form-data">
-
-              <!-- Configurações do FormSubmit -->
+            <form id="testimonialForm" action="https://formsubmit.co/kayofellipefer@gmail.com" method="POST" enctype="multipart/form-data">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_subject" value="Novo Depoimento - Kayo Portfolio">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_next" value="https://www.kayofellipe.com.br/testimonials.html?testimonial=success">
+              <input type="hidden" name="_next" value="/testimonials.html?testimonial=success">
 
-              <!-- Nome -->
               <div class="form-group">
                 <label for="testimonial-name">Nome completo</label>
-                <input
-                  type="text"
-                  id="testimonial-name"
-                  name="nome"
-                  required>
+                <input type="text" id="testimonial-name" name="nome" required>
               </div>
 
-              <!-- Foto (opcional) -->
               <div class="form-group">
                 <label for="testimonial-photo">Sua foto (opcional)</label>
                 <div class="file-upload-container">
-                  <input
-                    type="file"
-                    id="testimonial-photo"
-                    name="foto"
-                    accept="image/png,image/jpeg,image/jpg">
-
+                  <input type="file" id="testimonial-photo" name="foto" accept="image/jpeg,image/jpg,image/png,image/gif">
                   <div class="file-upload-placeholder">
                     <i class="fas fa-cloud-upload-alt"></i>
                     <span>Clique e adicione</span>
                   </div>
-
-                  <img
-                    id="photo-preview"
-                    class="photo-preview hidden"
-                    alt="Preview da foto">
+                  <img id="photo-preview" class="photo-preview hidden" alt="Preview da foto">
                 </div>
               </div>
 
-              <!-- Depoimento -->
               <div class="form-group">
                 <label for="testimonial-message">Seu depoimento</label>
-                <textarea
-                  id="testimonial-message"
-                  name="depoimento"
-                  rows="6"
-                  required></textarea>
+                <textarea id="testimonial-message" name="depoimento" rows="6" required></textarea>
               </div>
 
-              <!-- Melhorias (opcional) -->
               <div class="form-group">
                 <label for="testimonial-improvement">O que poderia melhorar? (opcional)</label>
-                <textarea
-                  id="testimonial-improvement"
-                  name="melhorias"
-                  rows="3"></textarea>
+                <textarea id="testimonial-improvement" name="melhorias" rows="3"></textarea>
               </div>
 
-              <!-- Ações -->
               <div class="modal-actions">
                 <button type="submit" class="btn btn-primary">
                   <i class="fas fa-paper-plane"></i> Enviar depoimento
                 </button>
                 <a href="index.html#testimonials" class="btn btn-secondary">Voltar</a>
               </div>
-
             </form>
           </div>
         </div>
