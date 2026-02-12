@@ -1,5 +1,103 @@
 // Portfolio Data - Define all projects and their galleries
 const portfolioData = {
+  sessao_diego_ana: {
+    title: "Diego & Ana",
+    type: "photography",
+    date: "2025-12-27",
+    category: "Ensaios",
+    items: [
+      {
+        type: "youtube",
+        src: "HnxMpuY9zo",
+        thumbnail: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/4ycFM6ZN/DSC03617_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/4ycFM6ZN/DSC03617_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/d0WXTQnS/DSC04056_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/d0WXTQnS/DSC04056_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/KY9VgcQQ/DSC04122_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/KY9VgcQQ/DSC04122_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/KvXWTH7H/DSC04180_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/KvXWTH7H/DSC04180_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/HnMPKwHn/DSC04242_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/HnMPKwHn/DSC04242_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/1tfd0xjp/DSC04331_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/1tfd0xjp/DSC04331_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/xjN7c2my/DSC04356_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/xjN7c2my/DSC04356_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/R0P8nCGj/DSC04473_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/R0P8nCGj/DSC04473_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/LXwbNycY/DSC04528_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/LXwbNycY/DSC04528_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/pTpSQN6y/Full_Size_Render_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/pTpSQN6y/Full_Size_Render_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/g0M56c4s/DSC03993_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/g0M56c4s/DSC03993_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/2jLJVDWn/DSC04308_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/2jLJVDWn/DSC04308_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/TY8sb4qD/DSC04363_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/TY8sb4qD/DSC04363_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/Jh7vnH3p/DSC04565_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/Jh7vnH3p/DSC04565_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/vmPj6838/Full_Size_Render_VSCO(1).jpg",
+        thumbnail: "https://i.postimg.cc/vmPj6838/Full_Size_Render_VSCO(1).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg",
+        thumbnail: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg"
+      },
+    ]
+  },
 
   sessao_nicolas_lays_2: {
     title: "Nicolas & Lays",
