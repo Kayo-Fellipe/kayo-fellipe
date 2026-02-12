@@ -18,6 +18,11 @@ const portfolioData = {
       },
       {
         type: "image",
+        src: "https://i.postimg.cc/3RdqjMcT/Full_Size_Render_VSCO(3).jpg",
+        thumbnail: "https://i.postimg.cc/3RdqjMcT/Full_Size_Render_VSCO(3).jpg"
+      },
+      {
+        type: "image",
         src: "https://i.postimg.cc/4ycFM6ZN/DSC03617_Original_VSCO.jpg",
         thumbnail: "https://i.postimg.cc/4ycFM6ZN/DSC03617_Original_VSCO.jpg"
       },
@@ -93,8 +98,183 @@ const portfolioData = {
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg",
+        src: "https://i.postimg.cc/1RVTfQFM/Full_Size_Render_VSCO(10).jpg",
+        thumbnail: "https://i.postimg.cc/1RVTfQFM/Full_Size_Render_VSCO(10).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/TY8sb4jF/Full_Size_Render_VSCO(11).jpg",
+        thumbnail: "https://i.postimg.cc/TY8sb4jF/Full_Size_Render_VSCO(11).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/QxpyJJ0F/Full_Size_Render_VSCO(12).jpg",
+        thumbnail: "https://i.postimg.cc/QxpyJJ0F/Full_Size_Render_VSCO(12).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/k4BHNrpX/Full_Size_Render_VSCO(13).jpg",
+        thumbnail: "https://i.postimg.cc/k4BHNrpX/Full_Size_Render_VSCO(13).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/8Ph0mmtv/Full_Size_Render_VSCO(14).jpg",
+        thumbnail: "https://i.postimg.cc/8Ph0mmtv/Full_Size_Render_VSCO(14).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/MTNFdsCY/Full_Size_Render_VSCO(15).jpg",
+        thumbnail: "https://i.postimg.cc/MTNFdsCY/Full_Size_Render_VSCO(15).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/5NwRSSnL/Full_Size_Render_VSCO(16).jpg",
+        thumbnail: "https://i.postimg.cc/5NwRSSnL/Full_Size_Render_VSCO(16).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/NfhnXz7h/Full_Size_Render_VSCO(17).jpg",
+        thumbnail: "https://i.postimg.cc/NfhnXz7h/Full_Size_Render_VSCO(17).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/kMRZBmSp/Full_Size_Render_VSCO(18).jpg",
+        thumbnail: "https://i.postimg.cc/kMRZBmSp/Full_Size_Render_VSCO(18).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/xCcZGr4j/Full_Size_Render_VSCO(19).jpg",
+        thumbnail: "https://i.postimg.cc/xCcZGr4j/Full_Size_Render_VSCO(19).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/FsjBVVDb/Full_Size_Render_VSCO(20).jpg",
+        thumbnail: "https://i.postimg.cc/FsjBVVDb/Full_Size_Render_VSCO(20).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/tTwM2rKw/Full_Size_Render_VSCO(22).jpg",
+        thumbnail: "https://i.postimg.cc/tTwM2rKw/Full_Size_Render_VSCO(22).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/kXxpvvfs/Full_Size_Render_VSCO(23).jpg",
+        thumbnail: "https://i.postimg.cc/kXxpvvfs/Full_Size_Render_VSCO(23).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/qqKZYsrm/Full_Size_Render_VSCO(24).jpg",
+        thumbnail: "https://i.postimg.cc/qqKZYsrm/Full_Size_Render_VSCO(24).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/j2fk9HT9/Full_Size_Render_VSCO(26).jpg",
+        thumbnail: "https://i.postimg.cc/j2fk9HT9/Full_Size_Render_VSCO(26).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/VvtHTqw3/Full_Size_Render_VSCO(27).jpg",
+        thumbnail: "https://i.postimg.cc/VvtHTqw3/Full_Size_Render_VSCO(27).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/rF6H4PCc/Full_Size_Render_VSCO(28).jpg",
+        thumbnail: "https://i.postimg.cc/rF6H4PCc/Full_Size_Render_VSCO(28).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/nc8WmPYn/Full_Size_Render_VSCO(29).jpg",
+        thumbnail: "https://i.postimg.cc/nc8WmPYn/Full_Size_Render_VSCO(29).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/Df4D8TGD/Full_Size_Render_VSCO(30).jpg",
+        thumbnail: "https://i.postimg.cc/Df4D8TGD/Full_Size_Render_VSCO(30).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/RVrYtDQZ/Full_Size_Render_VSCO(31).jpg",
+        thumbnail: "https://i.postimg.cc/RVrYtDQZ/Full_Size_Render_VSCO(31).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/tJ6mf3yy/Full_Size_Render_VSCO(32).jpg",
+        thumbnail: "https://i.postimg.cc/tJ6mf3yy/Full_Size_Render_VSCO(32).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/9XwSrh96/Full_Size_Render_VSCO(33).jpg",
+        thumbnail: "https://i.postimg.cc/9XwSrh96/Full_Size_Render_VSCO(33).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/rF6H4PCm/Full_Size_Render_VSCO(34).jpg",
+        thumbnail: "https://i.postimg.cc/rF6H4PCm/Full_Size_Render_VSCO(34).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/59QG6VvV/Full_Size_Render_VSCO(35).jpg",
+        thumbnail: "https://i.postimg.cc/59QG6VvV/Full_Size_Render_VSCO(35).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/434qdHvv/Full_Size_Render_VSCO(36).jpg",
+        thumbnail: "https://i.postimg.cc/434qdHvv/Full_Size_Render_VSCO(36).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/VvtHTq1m/Full_Size_Render_VSCO(37).jpg",
         thumbnail: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/BQWzFVcL/Full_Size_Render_VSCO(38).jpg",
+        thumbnail: "https://i.postimg.cc/BQWzFVcL/Full_Size_Render_VSCO(38).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/Y2LVhHFz/Full_Size_Render_VSCO(4).jpg",
+        thumbnail: "https://i.postimg.cc/Y2LVhHFz/Full_Size_Render_VSCO(4).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/qRS5jmP8/Full_Size_Render_VSCO(5).jpg",
+        thumbnail: "https://i.postimg.cc/qRS5jmP8/Full_Size_Render_VSCO(5).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/tChMNN24/Full_Size_Render_VSCO(6).jpg",
+        thumbnail: "https://i.postimg.cc/tChMNN24/Full_Size_Render_VSCO(6).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/X7MP5zKP/Full_Size_Render_VSCO(7).jpg",
+        thumbnail: "https://i.postimg.cc/X7MP5zKP/Full_Size_Render_VSCO(7).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/Yq1szzb9/Full_Size_Render_VSCO(8).jpg",
+        thumbnail: "https://i.postimg.cc/Yq1szzb9/Full_Size_Render_VSCO(8).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/k5Mz4RNK/Full_Size_Render_VSCO(9).jpg",
+        thumbnail: "https://i.postimg.cc/k5Mz4RNK/Full_Size_Render_VSCO(9).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/k4BHNrh0/Full_Size_Render_VSCO(2).jpg",
+        thumbnail: "https://i.postimg.cc/k4BHNrh0/Full_Size_Render_VSCO(2).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/MKyFmmd7/Full_Size_Render_VSCO(21).jpg",
+        thumbnail: "https://i.postimg.cc/MKyFmmd7/Full_Size_Render_VSCO(21).jpg"
+      },
+      {
+        type: "image",
+        src: "https://i.postimg.cc/QxpyJJ06/Full_Size_Render_VSCO(25).jpg",
+        thumbnail: "https://i.postimg.cc/QxpyJJ06/Full_Size_Render_VSCO(25).jpg"
       },
     ]
   },
