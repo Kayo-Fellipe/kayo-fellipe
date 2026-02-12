@@ -8,7 +8,7 @@ const portfolioData = {
     items: [
       {
         type: "youtube",
-        src: "HnxMpuY9zo",
+        src: "_HnxMpuY9zo",
         thumbnail: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg"
       },
       {
