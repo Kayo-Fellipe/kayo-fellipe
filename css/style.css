@@ -549,18 +549,19 @@ img {
   color: var(--color-light);
 }
 
-/* When header is scrolled, make the portfolio CTA a white button with black text */
+/* Keep portfolio button with black background and border for better visibility */
 #header.scrolled #nav ul li a.btn-portfolio,
 #header.scrolled #nav .btn-portfolio,
 #header.scrolled .btn-portfolio {
-  background: var(--color-light) !important;
-  color: var(--color-dark) !important;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)) !important;
+  color: var(--color-light) !important;
+  border: 2px solid rgba(255,255,255,0.06) !important;
+  box-shadow: 0 8px 24px rgba(255,255,255,0.03) !important;
 }
 
 #header.scrolled .btn-portfolio:hover {
-  background: var(--color-light-700) !important;
-  color: var(--color-dark) !important;
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)) !important;
+  color: var(--color-light) !important;
   transform: translateY(-1px);
 }
 
@@ -576,6 +577,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  border: 2px solid rgba(255,255,255,0.06);
 }
 
 .btn-portfolio:hover {
