@@ -549,28 +549,19 @@ img {
   color: var(--color-light);
 }
 
-/* Keep CTA white on scrolled header as well */
-#header.scrolled #nav ul li a.btn-portfolio {
-  color: var(--color-light);
-}
-
 /* When header is scrolled, make the portfolio CTA a white button with black text */
+#header.scrolled #nav ul li a.btn-portfolio,
+#header.scrolled #nav .btn-portfolio,
 #header.scrolled .btn-portfolio {
-  background: var(--color-light);
-  color: var(--color-dark);
+  background: var(--color-light) !important;
+  color: var(--color-dark) !important;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 #header.scrolled .btn-portfolio:hover {
-  background: var(--color-light-700);
-  color: var(--color-dark);
-  transform: translateY(-1px);
-}
-
-/* Stronger rule to ensure the CTA text becomes black when header is scrolled */
-#header.scrolled a.btn-portfolio {
+  background: var(--color-light-700) !important;
   color: var(--color-dark) !important;
-  background: var(--color-light) !important;
+  transform: translateY(-1px);
 }
 
 .btn-portfolio{
