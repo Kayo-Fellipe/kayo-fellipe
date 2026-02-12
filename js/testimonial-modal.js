@@ -52,6 +52,14 @@ document.addEventListener('keydown', (e) => {
 
 // Photo upload functionality (only attach if elements exist)
 if (photoInput) {
+  // Make entire file-upload-placeholder clickable
+  if (fileUploadPlaceholder) {
+    fileUploadPlaceholder.addEventListener('click', () => {
+      photoInput.click();
+    });
+    fileUploadPlaceholder.style.cursor = 'pointer';
+  }
+
   photoInput.addEventListener('change', function(e) {
     const file = e.target.files[0];
     if (!file) {
