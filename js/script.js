@@ -4,7 +4,6 @@ import './main.js';
 import './portfolio.js';
 import './testimonials.js';
 import './form.js';
-import './thankyou.js';
 import './testimonial-modal.js';
 
 // Initialize the application
