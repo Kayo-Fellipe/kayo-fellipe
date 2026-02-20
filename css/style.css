@@ -973,7 +973,7 @@ img {
 .testimonial-card {
   background-color: var(--color-dark-700);
   border-radius: 20px;
-  padding: 35px var(--space-6);
+  padding: 20px var(--space-6);
   display: none;
   opacity: 0;
   transform: translateX(50px);
