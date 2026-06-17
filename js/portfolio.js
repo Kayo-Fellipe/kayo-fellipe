@@ -9,7 +9,7 @@ const portfolioData = {
       {
         type: "youtube",
         src: "_HnxMpuY9zo",
-        thumbnail: "https://i.postimg.cc/434qdHvb/DSC03540_Original_VSCO.jpg"
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20%26%20Diego%20-%20Ilha%20Comprida/FullSizeRender_VSCO(1).jpg"
       },
 
       {
@@ -74,78 +74,59 @@ const portfolioData = {
       {
         type: "youtube",
         src: "HBZWJ9cCm5g",
-        thumbnail: "https://i.postimg.cc/QCWmW8rn/DSC01853_Original.jpg"
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/Design%20sem%20nome_Original.jpg"
+      },
+
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/Design%20sem%20nome_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/Design%20sem%20nome_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/k562CBFC/DSC01409_Original.jpg",
-        thumbnail: "https://i.postimg.cc/k562CBFC/DSC01409_Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01412_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01412_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/B6fnGNnh/DSC01586_Original.jpg",
-        thumbnail: "https://i.postimg.cc/B6fnGNnh/DSC01586_Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01417_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01417_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/DzJSh8db/DSC01567_Original.jpg",
-        thumbnail: "https://i.postimg.cc/DzJSh8db/DSC01567_Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01461_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01461_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/hjVhJ658/DSC01570_Original.jpg",
-        thumbnail: "https://i.postimg.cc/hjVhJ658/DSC01570_Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01536_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01536_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/wjPBw9Kn/DSC01576_Original.jpg",
-        thumbnail: "https://i.postimg.cc/wjPBw9Kn/DSC01576_Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01610_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01610_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/FswtqzRT/DSC01539_Original.jpg",
-        thumbnail: "https://i.postimg.cc/FswtqzRT/DSC01539_Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01620_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01620_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/SxtnHW9W/DSC01594_Original.jpg",
-        thumbnail: "https://i.postimg.cc/SxtnHW9W/DSC01594_Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01668_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01668_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/43Z0k9TP/DSC01606_Original.jpg",
-        thumbnail: "https://i.postimg.cc/43Z0k9TP/DSC01606_Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01822_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01822_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/TwjY2mKB/DSC01600_Original.jpg",
-        thumbnail: "https://i.postimg.cc/TwjY2mKB/DSC01600_Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/RCRVj757/DSC01610_Original.jpg",
-        thumbnail: "https://i.postimg.cc/RCRVj757/DSC01610_Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/GhK8x0mm/DSC01844_Original.jpg",
-        thumbnail: "https://i.postimg.cc/GhK8x0mm/DSC01844_Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/J4xD5w4p/DSC01837_Original.jpg",
-        thumbnail: "https://i.postimg.cc/J4xD5w4p/DSC01837_Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/YqMLF2kV/DSC01822_Original.jpg",
-        thumbnail: "https://i.postimg.cc/YqMLF2kV/DSC01822_Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/yYjgyq84/DSC01646_Original.jpg",
-        thumbnail: "https://i.postimg.cc/yYjgyq84/DSC01646_Original.jpg"
-      },
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01844_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Parque%20da%20%C3%81gua%20Branca/DSC01844_Original.jpg"
+      }
     ]
   },
 
@@ -158,32 +139,58 @@ const portfolioData = {
       {
         type: "youtube",
         src: "cAahx1drEm0",
-        thumbnail: "https://i.postimg.cc/N0f9ML3N/DSC01281-Original.jpg"
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01281_Original(1).jpg"
+      },
+
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01263_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01263_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/52mQb8RY/DSC01270-Original.jpg",
-        thumbnail: "https://i.postimg.cc/52mQb8RY/DSC01270-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01263_Original(1).jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01263_Original(1).jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/0NW6JPx9/DSC01284-Original.jpg",
-        thumbnail: "https://i.postimg.cc/0NW6JPx9/DSC01284-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01270_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01270_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/N0f9ML3N/DSC01281-Original.jpg",
-        thumbnail: "https://i.postimg.cc/N0f9ML3N/DSC01281-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01270_Original(1).jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01270_Original(1).jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/mg41vm8W/DSC01263-Original.jpg",
-        thumbnail: "https://i.postimg.cc/mg41vm8W/DSC01263-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01281_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01281_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/Ssnn63NC/DSC01286-Original.jpg",
-        thumbnail: "https://i.postimg.cc/Ssnn63NC/DSC01286-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01281_Original(1).jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01281_Original(1).jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01284_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01284_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01284_Original(1).jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01284_Original(1).jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01286_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01286_Original.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01286_Original(1).jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lucas%20Zanette%20-%20A%20Kriptonita/DSC01286_Original(1).jpg"
       }
     ]
   },
@@ -197,137 +204,57 @@ const portfolioData = {
       {
         type: "youtube",
         src: "_2SUEnHmTNg",
-        thumbnail: "https://i.postimg.cc/dQ8Tj714/DSC01249-Original.jpg"
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0234_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/TYYBJD06/DSC-0234-Original.jpg",
-        thumbnail: "https://i.postimg.cc/TYYBJD06/DSC-0234-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0029_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0029_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/qqZwLzBJ/DSC01255-Original.jpg",
-        thumbnail: "https://i.postimg.cc/qqZwLzBJ/DSC01255-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0037_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0037_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/MTmry6jH/DSC01251-Original.jpg",
-        thumbnail: "https://i.postimg.cc/MTmry6jH/DSC01251-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0051_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0051_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/mrNSndZ6/IMG-5779.jpg",
-        thumbnail: "https://i.postimg.cc/mrNSndZ6/IMG-5779.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0130_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0130_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/tCvR3yhB/DSC-0130-Original.jpg",
-        thumbnail: "https://i.postimg.cc/tCvR3yhB/DSC-0130-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0131_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0131_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/MKpKfXjc/DSC-0222-Original.jpg",
-        thumbnail: "https://i.postimg.cc/MKpKfXjc/DSC-0222-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0185_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0185_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/dQ8Tj714/DSC01249-Original.jpg",
-        thumbnail: "https://i.postimg.cc/dQ8Tj714/DSC01249-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0199_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0199_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/BbcLSzyd/DSC-0131-Original.jpg",
-        thumbnail: "https://i.postimg.cc/BbcLSzyd/DSC-0131-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0234_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC_0234_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/6qN4NKHr/DSC01182-Original.jpg",
-        thumbnail: "https://i.postimg.cc/6qN4NKHr/DSC01182-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC01212_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC01212_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/g2wz45sm/DSC-0029-Original.jpg",
-        thumbnail: "https://i.postimg.cc/g2wz45sm/DSC-0029-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/Ls1s47gN/DSC-0051-Original.jpg",
-        thumbnail: "https://i.postimg.cc/Ls1s47gN/DSC-0051-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/52G0V1yX/DSC-0037-Original.jpg",
-        thumbnail: "https://i.postimg.cc/52G0V1yX/DSC-0037-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/NMvjK41Y/DSC-0116-Original.jpg",
-        thumbnail: "https://i.postimg.cc/NMvjK41Y/DSC-0116-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/7YKhKSyM/DSC-0083-Original.jpg",
-        thumbnail: "https://i.postimg.cc/7YKhKSyM/DSC-0083-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/SxwyPr18/DSC01203-Original.jpg",
-        thumbnail: "https://i.postimg.cc/SxwyPr18/DSC01203-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/Y23CSQjK/DSC01208-Original.jpg",
-        thumbnail: "https://i.postimg.cc/Y23CSQjK/DSC01208-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/zv0zPY4X/DSC01211-Original.jpg",
-        thumbnail: "https://i.postimg.cc/zv0zPY4X/DSC01211-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/L5H4T8Cb/DSC01212-Original.jpg",
-        thumbnail: "https://i.postimg.cc/L5H4T8Cb/DSC01212-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/1XTTzWqr/DSC-0185-Original.jpg",
-        thumbnail: "https://i.postimg.cc/1XTTzWqr/DSC-0185-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/hvHynfkC/DSC01205-Original.jpg",
-        thumbnail: "https://i.postimg.cc/hvHynfkC/DSC01205-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/Y9CyzcNx/DSC-0179-Original.jpg",
-        thumbnail: "https://i.postimg.cc/Y9CyzcNx/DSC-0179-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/wv44WW0Y/DSC01241-Original.jpg",
-        thumbnail: "https://i.postimg.cc/wv44WW0Y/DSC01241-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/fRMFR03F/DSC-0199-Original.jpg",
-        thumbnail: "https://i.postimg.cc/fRMFR03F/DSC-0199-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/3JXVhZwm/DSC-0239-Original.jpg",
-        thumbnail: "https://i.postimg.cc/3JXVhZwm/DSC-0239-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/15h2bdyy/DSC-0256-Original.jpg",
-        thumbnail: "https://i.postimg.cc/15h2bdyy/DSC-0256-Original.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/8CtZ5K8f/IMG-5827.jpg",
-        thumbnail: "https://i.postimg.cc/8CtZ5K8f/IMG-5827.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC01251_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Lays%20%26%20Nicolas%20-%20Museu%20do%20Ipiranga/DSC01251_Original.jpg"
       }
     ]
   },
@@ -347,61 +274,6 @@ const portfolioData = {
         type: "image",
         src: "https://i.postimg.cc/L8hcgtnJ/IMG-5564.jpg",
         thumbnail: "https://i.postimg.cc/L8hcgtnJ/IMG-5564.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/BQhWvYQW/DSC00467.jpg",
-        thumbnail: "https://i.postimg.cc/BQhWvYQW/DSC00467.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/HndGrFym/IMG-5562.jpg",
-        thumbnail: "https://i.postimg.cc/HndGrFym/IMG-5562.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/MKZ2q2wb/IMG-5563.jpg",
-        thumbnail: "https://i.postimg.cc/MKZ2q2wb/IMG-5563.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/MKgDtV9M/DSC00645.jpg",
-        thumbnail: "https://i.postimg.cc/MKgDtV9M/DSC00645.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/Z53LQnQf/IMG-5561.jpg",
-        thumbnail: "https://i.postimg.cc/Z53LQnQf/IMG-5561.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/Jn7ctqzg/DSC00651.jpg",
-        thumbnail: "https://i.postimg.cc/Jn7ctqzg/DSC00651.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/QM3qZsGj/DSC00690.jpg",
-        thumbnail: "https://i.postimg.cc/QM3qZsGj/DSC00690.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/XJwS7nXx/DSC00653.jpg",
-        thumbnail: "https://i.postimg.cc/XJwS7nXx/DSC00653.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/1zrr9Tsw/DSC00596.jpg",
-        thumbnail: "https://i.postimg.cc/1zrr9Tsw/DSC00596.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/63HVZv7Q/DSC00714.jpg",
-        thumbnail: "https://i.postimg.cc/63HVZv7Q/DSC00714.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/xCrV2Xjc/DSC00482.jpg",
-        thumbnail: "https://i.postimg.cc/xCrV2Xjc/DSC00482.jpg"
       }
     ]
   },
@@ -414,48 +286,53 @@ const portfolioData = {
     items: [
       {
         type: "image",
-        src: "https://i.postimg.cc/CKZPMfGG/DSC-0088-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/CKZPMfGG/DSC-0088-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0017_VSCO_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0017_VSCO_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/VsXhbM34/DSC-0081-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/VsXhbM34/DSC-0081-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0049_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0049_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/K88pVW4s/DSC-0058-VSCO-Original.jpg",
-        thumbnail: "https://i.postimg.cc/K88pVW4s/DSC-0058-VSCO-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0058_VSCO_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0058_VSCO_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/fTKg8sW9/DSC-0059-VSCO-Original.jpg",
-        thumbnail: "https://i.postimg.cc/fTKg8sW9/DSC-0059-VSCO-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0059_VSCO_Original.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0059_VSCO_Original.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/wBSW1T2S/DSC-0092-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/wBSW1T2S/DSC-0092-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0069_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0069_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/fLm8mngk/DSC-0097-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/fLm8mngk/DSC-0097-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0081_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0081_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/D0hBcjt6/DSC-0043-VSCO-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/D0hBcjt6/DSC-0043-VSCO-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0088_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0088_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/L4kysS1b/DSC-0104-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/L4kysS1b/DSC-0104-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0092_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0092_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/9QggjB7X/DSC-0017-VSCO-Original.jpg",
-        thumbnail: "https://i.postimg.cc/9QggjB7X/DSC-0017-VSCO-Original.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0097_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0097_VSCO.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0104_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Monique%20%26%20Leo%20-%20Ensaio%20gestante/DSC_0104_VSCO.jpg"
       }
     ]
   },
@@ -468,48 +345,23 @@ const portfolioData = {
     items: [
       {
         type: "image",
-        src: "https://i.postimg.cc/mkGBy4Ln/DSC0019-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/mkGBy4Ln/DSC0019-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0006_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0006_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/4dpTd06Q/DSC0007-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/4dpTd06Q/DSC0007-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0007_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0007_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/sXW3WxrS/DSC0006-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/sXW3WxrS/DSC0006-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0019_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0019_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/Xq36ygxS/DSC0027-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/Xq36ygxS/DSC0027-VSCO.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/kg59cfC7/Full-Size-Render-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/kg59cfC7/Full-Size-Render-VSCO.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/BvkqtDd4/DSC0040-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/BvkqtDd4/DSC0040-VSCO.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/rsCchHzw/DSC0046-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/rsCchHzw/DSC0046-VSCO.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/ryS8FDg2/DSC0050-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/ryS8FDg2/DSC0050-VSCO.jpg"
-      },
-      {
-        type: "image",
-        src: "https://i.postimg.cc/3J1YmzPL/DSC0060-VSCO.jpg",
-        thumbnail: "https://i.postimg.cc/3J1YmzPL/DSC0060-VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0027_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0027_VSCO.jpg"
       }
     ]
   },
