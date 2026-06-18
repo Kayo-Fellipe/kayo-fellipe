@@ -345,23 +345,23 @@ const portfolioData = {
     items: [
       {
         type: "image",
-        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0006_VSCO.jpg",
-        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0006_VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/DSC0006_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/DSC0006_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0007_VSCO.jpg",
-        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0007_VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/DSC0007_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/DSC0007_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0019_VSCO.jpg",
-        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0019_VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/DSC0019_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/DSC0019_VSCO.jpg"
       },
       {
         type: "image",
-        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0027_VSCO.jpg",
-        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/_DSC0027_VSCO.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/DSC0027_VSCO.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Pamella%20%26%20Evandro%20-%20Ilha%20Comprida/DSC0027_VSCO.jpg"
       }
     ]
   },
