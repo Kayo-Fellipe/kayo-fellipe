@@ -21,6 +21,18 @@ button {
   padding: 0.5rem;
 }
 
+/* DEPRECATED: selectors archived — these rules are not referenced by HTML/JS
+   Keep here for review or restore if needed. Remove to shrink CSS in production.
+
+   #sort-select option
+   .sort-select:focus
+   .portfolio-stats
+   .portfolio-stats i
+   .stats-count
+
+*/
+
+/*
 #sort-select option {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
