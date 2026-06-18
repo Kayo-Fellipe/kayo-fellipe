@@ -32,6 +32,7 @@ button {
 
 */
 
+/* archived: start */
 /*
 #sort-select option {
   background-color: rgba(0, 0, 0, 0.9);
@@ -70,6 +71,8 @@ button {
   font-weight: 700;
   text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
 }
+
+/* archived: end */
 
 /* Modern Grid Layout */
 .portfolio-grid {
@@ -172,7 +175,7 @@ button {
   transform: scale(1.1);
 }
 
-
+/* Loading Animation */
 .portfolio-loading {
   display: none;
   text-align: center;
