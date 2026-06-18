@@ -665,7 +665,7 @@ img {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url('https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Banners/imagem_de_fundo_1920x1080.svg');
+  background-image: url('https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Banners/imagem_de_fundo_1920x1080.svg') !important;
   background-size: cover;
   background-position: center;
   position: relative;
