@@ -37,7 +37,7 @@ button {
 #sort-select option {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  border-radius: 10px; /* Alguns navegadores ignoram isso */
+  border-radius: 10px;
   padding: 0.5rem;
 }
 
@@ -71,7 +71,7 @@ button {
   font-weight: 700;
   text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
 }
-*/
+
 /* archived: end */
 
 /* Modern Grid Layout */
