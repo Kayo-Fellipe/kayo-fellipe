@@ -1,5 +1,124 @@
 // Portfolio Data - Define all projects and their galleries
 const portfolioData = {
+  sessao_luan_barbara: {
+    title: "Luan & Barbara",
+    type: "photography",
+    date: "2026-04-11",
+    category: "Casamento",
+    items: [
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08334.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08334.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08386.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08386.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08399.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08399.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08422.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08422.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08446.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08446.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08469.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08469.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08498.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08498.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08524.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08524.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08584.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC08584.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC09024.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Barbara%20%26%20Luan%20-%20Cart%C3%B3rio%20do%20S%C3%A3o%20Lu%C3%ADs/DSC09024.jpg"
+      }
+    ]
+  },
+
+  sessao_dymis_ingrid: {
+    title: "Dymis & Ingrid",
+    type: "photography",
+    date: "2026-02-28",
+    category: "Casamento",
+    items: [
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07830.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07830.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07837.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07837.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07848.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07848.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07855.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07855.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07859.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07859.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07864.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07864.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07868.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07868.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07933_Afterlight.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07933_Afterlight.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07955.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07955.jpg"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07963.jpg",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ingrid%20%26%20Dymis%20-%20Casamento/DSC07963.jpg"
+      }
+    ]
+  },
+  
+
   sessao_diego_ana: {
     title: "Diego & Ana",
     type: "photography",
