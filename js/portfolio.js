@@ -3,6 +3,19 @@
 // ============================================================
 
 const portfolioData = {
+  sessao_emanuel_tabata: {
+    title: "Emanuel & Tabata",
+    titleSerif: "para sempre",
+    type: "photography",
+    date: "2026-08-01",
+    category: "Casamento",
+    items: [
+      // TODO: Adicione os links das fotos abaixo
+      // { type: "image", src: "LINK_DA_FOTO", thumbnail: "LINK_DA_FOTO" },
+      // { type: "youtube", src: "ID_DO_VIDEO", thumbnail: "LINK_DA_THUMBNAIL" },
+    ]
+  },
+
   sessao_luan_barbara: {
     title: "Luan & Bárbara",
     titleSerif: "para sempre",
