@@ -10,14 +10,13 @@ const portfolioData = {
     date: "2026-08-01",
     category: "Casamento",
     items: [
-      { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00090.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00090.jpg" },
       { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00123.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00123.jpg" },
       { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00131.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00131.jpg" },
       { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00446.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00446.jpg" },
       { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00473.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00473.jpg" },
       { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00639.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC00639.jpg" },
       { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC01081.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC01081.jpg" },
-      { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC09919.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC09919.jpg" },
+      { type: "image", src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC09919.jpg", thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Tabata%20%26%20Emanuel%20-%20Casamento/DSC09919.jpg" }
     ]
   },
 
