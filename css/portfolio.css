@@ -21,59 +21,6 @@ button {
   padding: 0.5rem;
 }
 
-/* DEPRECATED: selectors archived — these rules are not referenced by HTML/JS
-   Keep here for review or restore if needed. Remove to shrink CSS in production.
-
-   #sort-select option
-   .sort-select:focus
-   .portfolio-stats
-   .portfolio-stats i
-   .stats-count
-
-*/
-
-/* archived: start */
-/*
-#sort-select option {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  border-radius: 10px;
-  padding: 0.5rem;
-}
-
-.sort-select:focus {
-  outline: none;
-  border-color: rebeccapurple;
-  box-shadow: 0 0 0 2px rgba(102, 51, 153, 0.5);
-}
-
-.portfolio-stats {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  color: var(--color-light);
-  font-size: 0.9rem;
-  background: rgba(0, 0, 0, 0.3);
-  padding: var(--space-2) var(--space-3);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  font-weight: 500;
-}
-
-.portfolio-stats i {
-  color: var(--color-primary-light);
-  font-size: 1rem;
-}
-
-.stats-count {
-  color: var(--color-primary-light);
-  font-weight: 700;
-  text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
-}
-
-/* archived: end */
-
 /* Modern Grid Layout */
 .portfolio-grid {
   display: grid;
@@ -516,28 +463,6 @@ button {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--space-3);
   }
-  
-  /* archived: portfolio-controls & filter groups - not used by current HTML/JS
-  .portfolio-controls {
-    padding: var(--space-4);
-    gap: var(--space-4);
-  }
-  
-  .filter-row {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-3);
-  }
-  
-  .filter-group {
-    min-width: 200px;
-  }
-
-  .portfolio-stats {
-    margin: 0 auto;
-    justify-content: center;
-  }
-  */
 }
 
 
@@ -547,61 +472,6 @@ button {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--space-3);
   }
-
-  /* archived: portfolio-controls and filter UI for smaller screens
-  .portfolio-controls {
-    padding: var(--space-3);
-    gap: var(--space-3);
-  }
-
-  .filter-row {
-    flex-direction: column;
-    gap: var(--space-3);
-    align-items: stretch;
-  }
-
-  .filter-group {
-    width: 100%;
-  }
-  
-  .filter-buttons {
-    justify-content: center;
-    padding: var(--space-);
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .filter-buttons::-webkit-scrollbar {
-    display: none;
-  }
-  .filter-btn {
-    padding: var(--space-2) var(--space-2);
-    font-size: 0.85rem;
-    flex: 0 0 auto;
-    text-align: center;
-    min-width: 100px;
-    white-space: nowrap;
-  }
-
-  .sort-select {
-    width: 100%;
-    min-width: auto;
-    text-align: center;
-    padding: var(--space-2) var(--space-4);
-    font-size: 1rem;
-  }
-
-  .portfolio-stats {
-    justify-content: center;
-    margin: 0;
-    padding: var(--space-2) var(--space-4);
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  */
 
   .modal-content {
     width: 100%;
@@ -684,48 +554,6 @@ button {
 }
 
 @media (max-width: 480px) {
-  /* archived: small-screen filter UI
-  .portfolio-controls {
-    padding: var(--space-2);
-    gap: var(--space-2);
-  }
-
-  .filter-buttons {
-    gap: var(--space-1);
-    padding: 4px;
-  }
-
-  .filter-btn {
-    padding: 10px 5px;
-    font-size: 0.8rem;
-    min-width: 50px;
-    border-radius: 8px;
-  }
-
-  .filter-row{
-    margin: 10px 10px
-  }
-
-  .filter-label {
-    font-size: 0.80rem;
-    margin-bottom: 4px;
-    
-  }
-
-  .sort-select {
-    font-size: 0.9rem;
-  }
-
-  .portfolio-stats {
-    padding: 8px 12px;
-    font-size: 0.8rem;
-  }
-
-  .portfolio-stats span {
-    display: inline-block;
-  }
-  */
-
   .gallery-container {
     height: 100vh;
     max-height: 80vh;
