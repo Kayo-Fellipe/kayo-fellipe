@@ -347,7 +347,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .hero-content h1 {
   font-size: clamp(2.2rem, 9vw, 7rem);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 0.92;
   color: var(--paper);
@@ -766,3 +766,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 
+<<<<<<< HEAD
+@media (min-width: 1001px) and (max-width: 1450px) {
+  .hero {
+    background-image: url('https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Banners/imagem_de_fundo_1450x911.svg') !important;
+  }
+}
+=======
+
+>>>>>>> 158374b74a4cfb81dc6990f5e79d38ef3c5f8eb5
