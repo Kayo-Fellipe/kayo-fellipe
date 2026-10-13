@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initializeNavigation();
   initializeScrollEffects();
   initializeRevealAnimations();
-  updateHeroBackground();
 });
 
 // ---------- Navigation ----------
@@ -137,24 +136,6 @@ function initializeRevealAnimations() {
   reveals.forEach(el => observer.observe(el));
 }
 
-// ---------- Hero Background Responsive ----------
-
-function updateHeroBackground() {
-  const hero = document.querySelector('.hero');
-  if (!hero) return;
-
-  const w = window.innerWidth;
-  if (w <= 1000) {
-    hero.style.backgroundImage = "url('https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Banners/imagem_de_fundo_tablet_celulares.svg')";
-  } else if (w <= 1450) {
-    hero.style.backgroundImage = "url('https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Banners/imagem_de_fundo_1450x911.svg')";
-  } else {
-    hero.style.backgroundImage = "url('https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Banners/imagem_de_fundo_1920x1080.svg')";
-  }
-  hero.style.backgroundSize = 'cover';
-  hero.style.backgroundPosition = 'center';
-}
-
 function debounce(func, wait) {
   let timeout;
   return function(...args) {
@@ -166,9 +147,6 @@ function debounce(func, wait) {
     timeout = setTimeout(later, wait);
   };
 }
-
-window.addEventListener('resize', debounce(updateHeroBackground, 120));
-window.addEventListener('orientationchange', updateHeroBackground);
 
 window.PortfolioUtils = {
   debounce,
