@@ -2,9 +2,6 @@
 // Import the main JavaScript files
 import './main.js';
 import './portfolio.js';
-import './testimonials.js';
-import './form.js';
-import './testimonial-modal.js';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {

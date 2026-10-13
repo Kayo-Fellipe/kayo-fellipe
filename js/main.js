@@ -94,12 +94,12 @@ function handleHeaderScroll() {
     if (window.scrollY > 1) {
       header.classList.add('scrolled');
       if (logoImg) {
-        logoImg.src = 'https://i.postimg.cc/Kzs3MFPn/4.png';
+        logoImg.src = 'https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Banners/logo-branca.png';
       }
     } else {
       header.classList.remove('scrolled');
       if (logoImg) {
-        logoImg.src = 'https://i.postimg.cc/ydNSxWZ1/3.png';
+        logoImg.src = 'https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Banners/logo-preta.png';
       }
     }
   }

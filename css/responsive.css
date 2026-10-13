@@ -15,9 +15,6 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (max-width: 992px) {
-  .modal-actions {
-     margin-bottom: 150px;
-  }
   .hero-content h1 {
     font-size: 3.5rem;
   }
@@ -47,7 +44,7 @@
     flex-direction: column;
   }
 
-  .contact-info, .contact-form {
+  .contact-info {
     flex: 100%;
     width: 100%;
   }
@@ -74,10 +71,6 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (max-width: 768px) {
-  .modal-actions {
-     margin-bottom: 150px;
-   }
-  
   #header .container {
     width: 95%;
   }
@@ -145,25 +138,10 @@
   }
 
   /* Documentary responsive rules removed (section commented out) */
-  .testimonial-content {
-    padding: var(--space-1);
-  }
-
-  .testimonial-text {
-    font-size: 1rem;
-  }
-
-  .author-img {
-    width: 50px;
-    height: 50px;
-  }
 }
 
 /* Extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 576px) {
- .modal-actions {
-   margin-bottom: 150px;
- }
   .hero-content h1 {
     font-size: 2.5rem;
   }
@@ -184,20 +162,6 @@
 
   .section-padding {
     padding: var(--space-5) 0;
-  }
-
-  .testimonial-container {
-    height: 350px;
-  }
-
-  .testimonial-author {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .author-img {
-    margin-right: 0;
-    margin-bottom: var(--space-2);
   }
 
   /* Documentary responsive rules removed */

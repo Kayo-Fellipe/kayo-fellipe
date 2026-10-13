@@ -387,12 +387,32 @@ const portfolioData = {
       {
         type: "youtube",
         src: "nQm9rewdjBs",
-        thumbnail: "https://i.postimg.cc/cCmpwTRn/DSC00876.jpg"
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00651.JPG"
       },
       {
         type: "image",
-        src: "https://i.postimg.cc/L8hcgtnJ/IMG-5564.jpg",
-        thumbnail: "https://i.postimg.cc/L8hcgtnJ/IMG-5564.jpg"
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00651.JPG",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00651.JPG"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00653.JPG",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00653.JPG"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00690.JPG",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00690.JPG"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00714.JPG",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/DSC00714.JPG"
+      },
+      {
+        type: "image",
+        src: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/IMG_4821.JPG",
+        thumbnail: "https://kayo-fellipe.github.io/kayo-fellipe-dados/img/Ana%20Beatriz%20-%20Ubatuba/IMG_4821.JPG"
       }
     ]
   },
